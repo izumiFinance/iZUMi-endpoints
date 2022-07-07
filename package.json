@@ -1,0 +1,31 @@
+{
+  "name": "iZUMi-endpoints",
+  "version": "1.0.0",
+  "repository": "git@github.com:izumiFinance/iZUMi-endpoints.git",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "clear_jest": "jest --clearCache"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "mem": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!variables/.*)"
+    ]
+  }
+}
