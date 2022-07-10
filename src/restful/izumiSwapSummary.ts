@@ -129,7 +129,7 @@ export const getIziSwapGenericSummaryRecord: RequestNormalGeneric<
     RequestIziSwapSummaryRecord,
     ResponseGenericIziSwapPoolSummary[]
 > = async (params) => {
-    if (params.type !== undefined && LATEST_TYPE.has(params.type) && params.chain_id && params.chain_id <= 0) {
+    if (params.type !== undefined && LATEST_TYPE.has(params.type) && (params.chain_id ?? 0) <= 0) {
         params.chain_id = undefined;
     }
     return axios.get(ENDPOINTS.izumiSwap.summary_record, { params });

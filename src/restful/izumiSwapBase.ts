@@ -152,7 +152,7 @@ export type ResponseIziSwapTokenRecord = {
 };
 
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
-    if (params.chain_id && params.chain_id <= 0) {
+    if (params.chain_id ?? 0 <= 0) {
         params.chain_id = undefined;
     }
     return axios.get(ENDPOINTS.izumiSwap.trans_record, { params });
@@ -170,7 +170,7 @@ export type ResponseGenericIziSwapMetaRecord = ResponseIziPoolRecord | ResponseI
 export const getGenericIziSwapMetaRecord: RequestNormalGeneric<RequestIziSwapMetaRecord, ResponseGenericIziSwapMetaRecord[]> = async (
     params
 ) => {
-    if (params.chain_id && params.chain_id <= 0) {
+    if (params.chain_id ?? 0 <= 0) {
         params.chain_id = undefined;
     }
     return axios.get(ENDPOINTS.izumiSwap.meta_record, { params });
