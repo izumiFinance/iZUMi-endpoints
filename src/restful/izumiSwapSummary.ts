@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormalGeneric } from './apiUtils';
+import { ResponseBasicIziSwapPoolRecord } from './izumiSwapBase';
 
 export enum SummaryRecordTypeEnum {
     // ResponseIziSwapSummaryRecord
@@ -85,6 +86,19 @@ export type ResponseIziSwapTokenSummaryRecord = {
     timestamp: number;
 };
 
+export type ResponseIziSwapPoolLiquiditySnapshotRecord = ResponseBasicIziSwapPoolRecord & {
+    tickspace: number;
+    tickL: number;
+    tickR: number;
+    currentTick: number;
+    liquidity: number;
+    snapshot: number[];
+    liquidityDist: number[];
+
+    tokenX_decimals: number;
+    tokenY_decimals: number;
+};
+
 export type ResponseIziSwapSummaryNormalRecord = {
     chainId: number;
 
@@ -101,7 +115,8 @@ export type ResponseIziSwapSummaryNormalRecord = {
 export type ResponseGenericIziSwapPoolSummary =
     | ResponseIziSwapPoolSummaryRecord
     | ResponseIziSwapTokenSummaryRecord
-    | ResponseIziSwapSummaryNormalRecord;
+    | ResponseIziSwapSummaryNormalRecord
+    | ResponseIziSwapPoolLiquiditySnapshotRecord;
 
 const LATEST_TYPE = new Set<SummaryRecordTypeEnum>([
     SummaryRecordTypeEnum.IZI_POOL_LATEST,

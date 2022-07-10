@@ -19,7 +19,7 @@ const config: APIConfig = {
 };
 
 const productionEndpoint = `https://${api_host_config['production']}/${config.prefix}/${config.version}`;
-const parentEndpoint = `https://${config.protocol}/${config.prefix}/${config.version}`;
+const parentEndpoint = `${config.protocol}/${config.root}/${config.prefix}/${config.version}`;
 
 export const ENDPOINTS = {
     bridge: {

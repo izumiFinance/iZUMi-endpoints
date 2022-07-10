@@ -1,7 +1,7 @@
 import axios from 'axios';
 import mem from 'mem/dist';
 import { ENDPOINTS } from './apiEndpoints';
-import { RequestNormal } from './apiUtils';
+import { RequestNormal, RequestNormalGeneric } from './apiUtils';
 
 export enum MetaRecordTypeEnum {
     ERC20_TOKEN = 0,
@@ -151,19 +151,6 @@ export type ResponseIziSwapTokenRecord = {
     decimals: number;
 };
 
-export type ResponseIziSwapPoolLiquiditySnapshotRecord = ResponseBasicIziSwapPoolRecord & {
-    tickspace: number;
-    tickL: number;
-    tickR: number;
-    currentTick: number;
-    liquidity: number;
-    snapshot: number[];
-    liquidityDist: number[];
-
-    tokenX_decimals: number;
-    tokenY_decimals: number;
-};
-
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
     if (params.chain_id && params.chain_id <= 0) {
         params.chain_id = undefined;
@@ -173,14 +160,14 @@ export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, Res
 
 export const getIziSwapTransAggregateRecord: RequestNormal<
     RequestIziSwapTransAggregateRecord,
-    ResponseIziSwapTransAggregateRecord[]>
+    ResponseIziSwapTransAggregateRecord[]
 > = async (params) => {
     return axios.get(ENDPOINTS.izumiSwap.trans_record_aggregate, { params });
 };
 
 export type ResponseGenericIziSwapMetaRecord = ResponseIziPoolRecord | ResponseIziSwapTokenRecord;
 
-export const getGenericIziSwapMetaRecord: RequestNormal<RequestIziSwapMetaRecord, ResponseGenericIziSwapMetaRecord[]> = async (
+export const getGenericIziSwapMetaRecord: RequestNormalGeneric<RequestIziSwapMetaRecord, ResponseGenericIziSwapMetaRecord[]> = async (
     params
 ) => {
     if (params.chain_id && params.chain_id <= 0) {

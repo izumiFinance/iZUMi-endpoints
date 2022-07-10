@@ -1,7 +1,7 @@
 import axios from 'axios';
 import mem from 'mem/dist';
 import { ENDPOINTS } from './apiEndpoints';
-import { RequestNormal } from './apiUtils';
+import { RequestNormalGeneric } from './apiUtils';
 import { ResponseBasicIziSwapPoolRecord } from './izumiSwapBase';
 
 export enum IzumiSwapHourRecordTypeEnum {
@@ -55,9 +55,9 @@ export type ResponseIziSwapTokenHourRecord = {
     timestamp: number;
 };
 
-export type ResponseIziSwapHourRecord = ResponseIziSwapPoolHourRecord | ResponseIziSwapTokenHourRecord;
+export type ResponseGenericIziSwapHourRecord = ResponseIziSwapPoolHourRecord | ResponseIziSwapTokenHourRecord;
 
-export const getIziSwapHourRecord: RequestNormal<RequestIziSwapHourRecord, ResponseIziSwapHourRecord[]> = async (params) => {
+export const getIziSwapHourRecord: RequestNormalGeneric<RequestIziSwapHourRecord, ResponseGenericIziSwapHourRecord[]> = async (params) => {
     if (params.chain_id && params.chain_id <= 0) {
         params.chain_id = undefined;
     }
