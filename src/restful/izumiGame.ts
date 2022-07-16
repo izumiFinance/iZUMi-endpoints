@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
-import { Response, RequestNormal } from './apiUtils';
+import { Response, RequestNormal, NormalResponseDataWrapper } from './apiUtils';
 
 export enum GameEventsTypeEnum {
     UPCOMING = 0,
@@ -8,6 +8,12 @@ export enum GameEventsTypeEnum {
     ENDED = 2,
     STOP = 3,
     OTHER = 4,
+}
+
+export enum GameTypeEnum {
+    WEEKLY = 0,
+    DAILY = 1,
+    TOKEN = 2,
 }
 
 export type GameEvents = {
@@ -18,14 +24,14 @@ export type GameEvents = {
     endTime: string;
     banner: string;
     leftTime: string;
-    type: number;
+    type: GameTypeEnum;
 };
 
 export type ResponseGameEvents = {
     data: GameEvents[];
 };
 
-export const getGameEvents = async (): Response<ResponseGameEvents> => {
+export const getGameEvents = async (): Response<NormalResponseDataWrapper<ResponseGameEvents>> => {
     return axios.get(ENDPOINTS.game.events);
 };
 
