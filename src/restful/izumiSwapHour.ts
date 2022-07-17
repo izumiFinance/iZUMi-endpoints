@@ -17,7 +17,7 @@ export type RequestIziSwapHourRecord = {
     chain_id?: number;
     type?: IzumiSwapHourRecordTypeEnum;
     contract_addr?: string;
-    major?: number; // 0 for normal hour 1 for day start hour
+    major?: number; // choice: 0 for normal hour, 1 for day start hour
 
     addr_list?: string; // join with comma
     time_start?: string; // 2022-02-01 00:00:00 like

@@ -8,6 +8,7 @@ export enum SummaryRecordTypeEnum {
     IZI_POOL_LATEST = 0,
     IZI_POOL_DAY_ARCHIVE = 1,
 
+    // ResponseIziSwapPoolLiquiditySnapshotRecord
     IZI_POOL_LIQ_SNAPSHOT = 2,
 
     // ResponseIziSwapSummaryNormalRecord

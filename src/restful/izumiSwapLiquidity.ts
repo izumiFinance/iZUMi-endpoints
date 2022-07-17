@@ -17,7 +17,7 @@ export type RequestIziSwapLiquidityRecord = {
     status?: iZiSwapLiquidityRecordStatusEnum;
     nft_id_list?: string; // join nft_id with comma
 
-    order_by?: string; // nft_id
+    order_by?: string; // choice: nft_id
 
     page?: number; // start from 1
     page_size?: number;
