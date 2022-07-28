@@ -54,7 +54,7 @@ export const getIziSwapLiquidityRecord: RequestNormal<
     RequestIziSwapLiquidityRecord,
     ResponseIziSwapLiquidityRecord[]
 > = async (params) => {
-    if (params.chain_id ?? 0 <= 0) {
+    if ((params.chain_id ?? 0) <= 0) {
         params.chain_id = undefined;
     }
     return axios.get(ENDPOINTS.izumiSwap.liquidity_record, { params });

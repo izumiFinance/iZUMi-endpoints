@@ -58,7 +58,7 @@ export type ResponseIziSwapTokenHourRecord = {
 export type ResponseGenericIziSwapHourRecord = ResponseIziSwapPoolHourRecord | ResponseIziSwapTokenHourRecord;
 
 export const getIziSwapHourRecord: RequestNormalGeneric<RequestIziSwapHourRecord, ResponseGenericIziSwapHourRecord[]> = async (params) => {
-    if (params.chain_id ?? 0 <= 0) {
+    if ((params.chain_id ?? 0) <= 0) {
         params.chain_id = undefined;
     }
     return axios.get(ENDPOINTS.izumiSwap.hour_record, { params });
