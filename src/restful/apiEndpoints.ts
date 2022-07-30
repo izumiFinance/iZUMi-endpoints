@@ -56,5 +56,8 @@ export const ENDPOINTS = {
         rules: `${gameParentEndpoint}/game/rules/`,
         join: `${gameParentEndpoint}/game/participate/`,
     },
+    external: {
+        cmc_amm_dex: `${parentEndpoint}/izi_swap/cmc_amm_dex/`,
+    }
 
 };

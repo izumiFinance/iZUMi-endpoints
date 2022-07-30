@@ -17,3 +17,5 @@ export type RequestNormal<ReqData, RespData> = (data: ReqData) => Response<Norma
 export type RequestNormalGeneric<ReqData, GenericResp> = <RespData extends GenericResp>(
     data: ReqData
 ) => Response<NormalResponseDataWrapper<RespData>>;
+
+export const nullablePathVar = (pathVar: any) => pathVar ? `${pathVar}/` : '';
