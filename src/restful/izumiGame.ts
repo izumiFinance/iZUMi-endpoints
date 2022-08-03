@@ -116,3 +116,17 @@ export type RequestGameId = {
 export const getGameEventById: RequestNormal<RequestGameId, ResponseGameEvents> = async (params) => {
     return axios.get(ENDPOINTS.game.events, { params });
 };
+
+export type RequestClaimHistory = {
+    address: string;
+};
+
+export type ResponseClaimHistory = {
+    symbol: string;
+    amount: number;
+    timestamp: number;
+};
+
+export const getClaimHistory: RequestNormal<RequestClaimHistory, ResponseClaimHistory[]> = async (params) => {
+    return axios.get(ENDPOINTS.game.history, { params });
+};

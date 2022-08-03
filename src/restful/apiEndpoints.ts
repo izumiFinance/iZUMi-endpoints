@@ -30,7 +30,6 @@ const productionEndpoint = `https://${api_host_config['production']}/${config.pr
 export const parentEndpoint = `${config.protocol}${config.root}/${config.prefix}/${config.version}`;
 export const gameParentEndpoint = `${config.protocol}${config.game_root}/${config.prefix}/${config.version}`;
 
-
 export const ENDPOINTS = {
     farm: {
         stat: `${parentEndpoint}/farm/dashboard/`,
@@ -55,9 +54,9 @@ export const ENDPOINTS = {
         winner: `${gameParentEndpoint}/game/winner/`,
         rules: `${gameParentEndpoint}/game/rules/`,
         join: `${gameParentEndpoint}/game/participate/`,
+        history: `${gameParentEndpoint}/game/history/`,
     },
     external: {
         cmc_amm_dex: `${parentEndpoint}/izi_swap/cmc_amm_dex/`,
-    }
-
+    },
 };
