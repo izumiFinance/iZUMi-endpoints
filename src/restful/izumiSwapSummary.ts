@@ -28,7 +28,8 @@ export type RequestIziSwapSummaryRecord = {
     time_start?: string; // 2022-02-01 00:00:00 like
     time_end?: string;
 
-    order_by?: string; // time or -time
+    // time or -time, choices: time, major(tvl), vol_week, vol_day, fees_week, fees_day
+    order_by?: string;
     page?: number; // start from 1
     page_size?: number;
 };
