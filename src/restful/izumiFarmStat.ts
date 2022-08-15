@@ -93,6 +93,6 @@ export const getFarmArchiveTvl: RequestNormal<RequestFarmArchiveTvl, ResponseFar
     return axios.get(ENDPOINTS.farm.tvl, { params });
 };
 
-export const getContactInfo: RequestNormal<RequestContactInfo, { data: ResponseContactInfo }> = async (params) => {
+export const getContactInfo: RequestNormal<RequestContactInfo, ResponseContactInfo> = async (params) => {
     return axios.get(ENDPOINTS.farm.tool, { params });
 };
