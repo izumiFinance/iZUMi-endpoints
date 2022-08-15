@@ -19,11 +19,11 @@ export enum ContractBoostTypeEnum {
     veiZiBoost = 'veiZiBoost',
 }
 
-export type rewardInfos = {
+export interface rewardInfos {
     rewardToken: string;
     pendingReward: string;
     distributionRate: string;
-};
+}
 
 export type RequestAllFarmStat = {
     type?: IzumiFarmContractTypeEnum;
