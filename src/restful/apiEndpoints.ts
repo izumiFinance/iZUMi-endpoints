@@ -35,6 +35,7 @@ export const ENDPOINTS = {
         stat: `${parentEndpoint}/farm/dashboard/`,
         tvl: `${parentEndpoint}/farm/tvl/`,
         apr: `${parentEndpoint}/farm/stat/apr/`,
+        tool: `${parentEndpoint}/farm/stat/tool/`,
     },
     izumiSwap: {
         trans_record: `${parentEndpoint}/izi_swap/trans_record/`,
