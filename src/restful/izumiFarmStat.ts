@@ -24,8 +24,8 @@ export interface rewardInfos {
     pendingReward: string;
     distributionRate: string;
 
-    provider?: string;
-    rewardPerBlock?: string;
+    provider: string;
+    rewardPerBlock: string;
 }
 
 export type RequestAllFarmStat = {
