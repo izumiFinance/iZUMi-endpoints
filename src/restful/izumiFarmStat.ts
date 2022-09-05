@@ -64,6 +64,7 @@ export type ResponseContactInfo = {
     status: string;
     rewardInfos: rewardInfos[];
     apr: number[];
+    endBlock: number;
 };
 
 export type RequestFarmTvl = {
