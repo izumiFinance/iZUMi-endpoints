@@ -65,6 +65,7 @@ export type ResponseContactInfo = {
     status: string;
     rewardInfos: rewardInfos[];
     apr: number[];
+    startBlock: number;
     endBlock: number;
 };
 
