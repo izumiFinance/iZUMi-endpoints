@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal } from './apiUtils';
+import { TokenInfoFormatted } from '../../../../hooks/useTokenListFormatted';
 
 export enum IzumiFarmContractTypeEnum {
     FIXRANGE = 0,
@@ -20,7 +21,7 @@ export enum ContractBoostTypeEnum {
 }
 
 export interface rewardInfos {
-    rewardToken: string;
+    rewardToken: TokenInfoFormatted;
     pendingReward: string;
     distributionRate: string;
 
