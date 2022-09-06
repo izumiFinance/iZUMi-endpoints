@@ -1,7 +1,17 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal } from './apiUtils';
-import { TokenInfoFormatted } from '../../../../hooks/useTokenListFormatted';
+export interface TokenInfoFormatted {
+    chainId: number;
+    name: string;
+    symbol: string;
+    icon?: string;
+    address: string;
+    wrapTokenAddress?: string;
+    decimal: number;
+    addTime?: Date;
+    custom?: boolean;
+}
 
 export enum IzumiFarmContractTypeEnum {
     FIXRANGE = 0,
