@@ -66,7 +66,7 @@ export type RequestIziSwapTransAggregateRecord = {
     account_addr: string;
     time_start: string; // 2022-02-01 00:00:00 like
     time_end: string;
-    with_contract: string;
+    with_contract?: string;
 };
 
 export type RequestIziSwapMetaRecord = {
