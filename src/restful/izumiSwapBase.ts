@@ -56,6 +56,8 @@ export type RequestIziSwapTransRecord = {
     order_by?: string; // time or -time, major
     page?: number; // start from 1
     page_size?: number;
+
+    with_contract?: string;
 };
 
 export type RequestIziSwapTransAggregateRecord = {
@@ -64,6 +66,7 @@ export type RequestIziSwapTransAggregateRecord = {
     account_addr: string;
     time_start: string; // 2022-02-01 00:00:00 like
     time_end: string;
+    with_contract: string;
 };
 
 export type RequestIziSwapMetaRecord = {
