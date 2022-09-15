@@ -68,7 +68,9 @@ export type ResponseFarmArchiveTvl = {
 export type ResponseContactInfo = {
     type: string;
     tokenX: string;
+    tokenX_address: string;
     tokenY: string;
+    tokenY_address: string;
     pool: string;
     fee: number;
     tvl: number;
