@@ -16,6 +16,7 @@ export enum ChainId {
     MaticTestnet = 80001,
     Harmony = 1666600000,
     HarmonyTestnet = 1666700000,
+    Cronos = 25,
 }
 
 export enum TokenSymbol {
