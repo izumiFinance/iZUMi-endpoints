@@ -8,6 +8,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ETC]: '0x1D377311b342633A970e71a787C50F83858BFC1B', // 2022.08.11
     [ChainId.Cronos]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.Arbitrum]: '0x611575eE1fbd4F7915D0eABCC518eD396fF78F0c',
+    [ChainId.Matic]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -18,6 +19,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ETC]: '0x032b241De86a8660f1Ae0691a4760B426EA246d7', // 2022.08.11
     [ChainId.Cronos]: '0x34bc1b87f60e0a30c0e24FD7Abada70436c71406',
     [ChainId.Arbitrum]: '0xcA7e21764CD8f7c1Ec40e651E25Da68AeD096037',
+    [ChainId.Matic]: '0x34bc1b87f60e0a30c0e24FD7Abada70436c71406',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -28,6 +30,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ETC]: '0xe6805638db944eA605e774e72c6F0D15Fb6a1347', // 2022.08.11
     [ChainId.Cronos]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148', // 2022.08.11
     [ChainId.Arbitrum]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148', // 2022.08.11
+    [ChainId.Arbitrum]: '0x3F559139C2Fc7B97Ad6FE9B4d1f75149F551DB18',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -38,6 +41,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ETC]: '0xe4A0b241D8345d86FB140D40c87C5fbDd685B9dd', // 2022.08.11
     [ChainId.Cronos]: '0x2C6Df0fDbCE9D2Ded2B52A117126F2Dc991f770f', // 2022.08.11
     [ChainId.Arbitrum]: '0x25C030116Feb2E7BbA054b9de0915E5F51b03e31', // 2022.08.11
+    [ChainId.Arbitrum]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -46,6 +50,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.AuroraTestnet]: null,
     [ChainId.Aurora]: '0x50E024bd504f066fd7f343d6D048F4BD97B1064E',
     [ChainId.Arbitrum]: '0x1D377311b342633A970e71a787C50F83858BFC1B',
+    [ChainId.Matic]: '0x2C6Df0fDbCE9D2Ded2B52A117126F2Dc991f770f',
     [ChainId.ETC]: null,
 };
 
