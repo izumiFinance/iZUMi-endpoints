@@ -1,4 +1,5 @@
 import { ChainId } from "../../web3Constant";
+import { TokenId2ContractAddress } from "../../web3types";
 
 export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.BSCTestnet]: '0x6bEae78975e561fDF27AaC6f09F714E69191DcfD', // 2022.05.10

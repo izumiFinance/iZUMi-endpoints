@@ -1,4 +1,5 @@
 import { ChainId } from "../../web3Constant";
+import { TokenId2ContractAddress } from "../../web3types";
 
 export const VEIZI_ADDRESS: TokenId2ContractAddress = {
     [ChainId.EthereumMainnet]: '0xB56A454d8DaC2AD4cB82337887717a2a427Fcd00',
