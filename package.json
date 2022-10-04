@@ -11,7 +11,9 @@
   "dependencies": {
     "axios": "^0.27.2",
     "mem": "^9.0.2",
-    "web3": "^1.5.2"
+    "web3": "^1.5.2",
+    "ahooks": "^2.10.12"
+
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
