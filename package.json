@@ -12,7 +12,7 @@
     "axios": "^0.27.2",
     "mem": "^9.0.2",
     "web3": "^1.5.2",
-    "ahooks": "^2.10.12"
+    "ahooks": "^3.3.0"
 
   },
   "devDependencies": {

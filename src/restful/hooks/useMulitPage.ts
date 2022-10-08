@@ -1,4 +1,5 @@
 import { useSetState } from 'ahooks';
+import { SetState } from 'ahooks/lib/useSetState';
 import { MultiPageData, MultiPageSetting } from '../types/multiPage';
 
 export interface useMultiPageReturn<T> {
@@ -7,7 +8,7 @@ export interface useMultiPageReturn<T> {
 
     setCurrentPage: (page: number) => void;
     setPageSize: (pageSize: number) => void;
-    setPageData: (patch: Partial<MultiPageData<T>> | ((prevState: MultiPageData<T>) => Partial<MultiPageData<T>>)) => void;
+    setPageData: SetState<MultiPageData<T | undefined>>;
 }
 
 export const useMultiPage = <T>(initPageSize: number = 10) : useMultiPageReturn<T> => {
