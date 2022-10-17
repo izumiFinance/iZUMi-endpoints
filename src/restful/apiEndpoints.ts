@@ -60,4 +60,7 @@ export const ENDPOINTS = {
     external: {
         cmc_amm_dex: `${parentEndpoint}/izi_swap/cmc_amm_dex/`,
     },
+    tokenInfo: {
+        details: `${parentEndpoint}/token_info/details/`,
+    },
 };
