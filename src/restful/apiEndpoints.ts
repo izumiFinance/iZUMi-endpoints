@@ -44,6 +44,7 @@ export const ENDPOINTS = {
         summary_record: `${parentEndpoint}/izi_swap/summary_record/`,
         hour_record: `${parentEndpoint}/izi_swap/hour_record/`,
         liquidity_record: `${parentEndpoint}/izi_swap/liquidity_record/`,
+        klines: `${parentEndpoint}/izi_swap/klines/`,
     },
     priceInfo: {
         price_info: `${productionEndpoint}/token_info/price_info/`,
