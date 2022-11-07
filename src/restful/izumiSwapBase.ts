@@ -20,6 +20,17 @@ export enum TransRecordTypeEnum {
     IZI_SWAP_DEC_LIMIT_ORDER = 15,
 }
 
+export enum iZiSwapMetaModeEnum {
+    DEFAULT = 0,
+    POOL_KLINE_M1 = 1, // min record interval is 1 minute
+    POOL_KLINE_M15 = 2,
+    POOL_KLINE_H1 = 3,
+    POOL_KLINE_H4 = 4,
+    POOL_KLINE_DAY = 5,
+    POOL_KLINE_WEEK = 6,
+    POOL_KLINE_MONTH = 7,
+}
+
 export const TransRecordTypeMapping: Record<string, number | undefined> = {
     All: undefined,
     Swap: TransRecordTypeEnum.IZI_SWAP_TOKEN,
@@ -84,6 +95,8 @@ export type RequestIziSwapMetaRecord = {
 
     token?: string; // token record symbol
     token_search?: string; // token fuzzy search key word
+
+    mode?: iZiSwapMetaModeEnum,
 
     order_by?: string; // time or -time
     page?: number; // start from 1
