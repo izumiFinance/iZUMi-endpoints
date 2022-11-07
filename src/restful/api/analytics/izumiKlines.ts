@@ -17,6 +17,7 @@ export type RequestIziSwapKLinesRecord = {
     interval: iZiSwapKLinesRecordEnum;
     time_start?: string; // 2022-02-01 00:00:00 like
     time_end?: string;
+    time?: string; // time for certain value
 
     // time or -time, choices: time
     order_by?: string;
@@ -31,6 +32,8 @@ export type ResponseIziSwapKLinesRecord = {
     high: string;
     low: string;
     close: string;
+
+    volume: string; // trade volume usd value of period
 };
 
 export const getIziSwapKLinesRecord: RequestNormalGeneric<RequestIziSwapKLinesRecord, ResponseIziSwapKLinesRecord[]> = async (params) => {
