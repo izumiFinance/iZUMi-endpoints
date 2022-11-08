@@ -36,6 +36,33 @@ export type ResponseIziSwapKLinesRecord = {
     volume: string; // trade volume usd value of period
 };
 
+export type ResponseKlineTokenMeta = {
+    address: string;
+    symbol: string;
+    decimal: number;
+}
+
+export type ResponseKlinePoolMeta = {
+    address: string;
+    chainId: number;
+    fee: number;
+
+    initialPrice: number;
+    dealTimestamp: number;
+    latestDealPrice: number;
+    dayPriceChange: number;
+}
+
+export type ResponseKlineInfoMeta = {
+    tokenX: ResponseKlineTokenMeta;
+    tokenY: ResponseKlineTokenMeta;
+    pool: ResponseKlinePoolMeta;
+}
+
 export const getIziSwapKLinesRecord: RequestNormalGeneric<RequestIziSwapKLinesRecord, ResponseIziSwapKLinesRecord[]> = async (params) => {
     return axios.get(ENDPOINTS.izumiSwap.klines, { params });
+};
+
+export const getIziSwapKlineInfoMeta: RequestNormalGeneric<number, ResponseKlineInfoMeta[]> = async (chainId) => {
+    return axios.get(`${ENDPOINTS.izumiSwap.meta_record_for_kline}${chainId}/`);
 };
