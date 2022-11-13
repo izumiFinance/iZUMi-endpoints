@@ -4,6 +4,7 @@ import { RequestNormalGeneric } from '../../apiUtils';
 
 export enum  iZiSwapKLinesRecordEnum {
     MINUTE_1 = '1m',
+    MINUTE_5 = '5m',
     MINUTE_15 = '15m',
     HOUR_1 = '1h',
     HOUR_4 = '4h',
@@ -47,10 +48,10 @@ export type ResponseKlinePoolMeta = {
     chainId: number;
     fee: number;
 
-    initialPrice: number;
-    dealTimestamp: number;
-    latestDealPrice: number;
-    dayPriceChange: number;
+    initialPrice: number;       // price of pool created
+    dealTimestamp: number;      // last deal time
+    latestDealPrice: number;    // last deal price
+    dayPriceChange: number;     // price change rate of day, multi 100 to percent
 }
 
 export type ResponseKlineInfoMeta = {

@@ -23,12 +23,13 @@ export enum TransRecordTypeEnum {
 export enum iZiSwapMetaModeEnum {
     DEFAULT = 0,
     POOL_KLINE_M1 = 1, // min record interval is 1 minute
-    POOL_KLINE_M15 = 2,
-    POOL_KLINE_H1 = 3,
-    POOL_KLINE_H4 = 4,
-    POOL_KLINE_DAY = 5,
-    POOL_KLINE_WEEK = 6,
-    POOL_KLINE_MONTH = 7,
+    POOL_KLINE_M5 = 2,
+    POOL_KLINE_M15 = 3,
+    POOL_KLINE_H1 = 10,
+    POOL_KLINE_H4 = 15,
+    POOL_KLINE_DAY = 20,
+    POOL_KLINE_WEEK = 30,
+    POOL_KLINE_MONTH = 40,
 }
 
 export const TransRecordTypeMapping: Record<string, number | undefined> = {
