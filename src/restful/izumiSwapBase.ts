@@ -97,7 +97,7 @@ export type RequestIziSwapMetaRecord = {
     token?: string; // token record symbol
     token_search?: string; // token fuzzy search key word
 
-    mode?: iZiSwapMetaModeEnum,
+    mode?: iZiSwapMetaModeEnum;
 
     order_by?: string; // time or -time
     page?: number; // start from 1
@@ -127,6 +127,7 @@ export type ResponseIziTransRecord = {
 
     price?: number;
     amount?: number;
+    dealPrice?: number;
 };
 
 export type ResponseIziSwapTransAggregateRecord = {
@@ -175,12 +176,10 @@ export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, Res
     return axios.get(ENDPOINTS.izumiSwap.trans_record, { params });
 };
 
-export const getIziSwapTransAggregateRecord: RequestNormal<
-    RequestIziSwapTransAggregateRecord,
-    ResponseIziSwapTransAggregateRecord[]
-> = async (params) => {
-    return axios.get(ENDPOINTS.izumiSwap.trans_record_aggregate, { params });
-};
+export const getIziSwapTransAggregateRecord: RequestNormal<RequestIziSwapTransAggregateRecord, ResponseIziSwapTransAggregateRecord[]> =
+    async (params) => {
+        return axios.get(ENDPOINTS.izumiSwap.trans_record_aggregate, { params });
+    };
 
 export type ResponseGenericIziSwapMetaRecord = ResponseIziPoolRecord | ResponseIziSwapTokenRecord;
 
