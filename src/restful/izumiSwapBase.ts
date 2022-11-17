@@ -160,6 +160,8 @@ export type ResponseIziPoolRecord = {
     tokenY_address: string;
     tokenY_decimals: number;
     txHash: string;
+
+    model: iZiSwapMetaModeEnum;
 };
 
 export type ResponseIziSwapTokenRecord = {
@@ -167,6 +169,8 @@ export type ResponseIziSwapTokenRecord = {
     address: string;
     symbol: string;
     decimals: number;
+
+    model: iZiSwapMetaModeEnum;
 };
 
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
