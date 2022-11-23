@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ENDPOINTS } from '../../apiEndpoints';
 import { RequestNormalGeneric } from '../../apiUtils';
 
-export enum  iZiSwapKLinesRecordEnum {
+export enum iZiSwapKLinesRecordEnum {
     MINUTE_1 = '1m',
     MINUTE_5 = '5m',
     MINUTE_15 = '15m',
@@ -13,12 +13,18 @@ export enum  iZiSwapKLinesRecordEnum {
     MONTH = 'M',
 }
 
+export enum iZiSwapKLinesStatusEnum {
+    PREVIEW = 0, // not stable data
+    ARCHIVE = 1, // stable data
+}
+
 export type RequestIziSwapKLinesRecord = {
     identity: string; // pool addr
     interval: iZiSwapKLinesRecordEnum;
     time_start?: string; // 2022-02-01 00:00:00 like
     time_end?: string;
     time?: string; // time for certain value
+    status?: iZiSwapKLinesStatusEnum;
 
     // time or -time, choices: time
     order_by?: string;
@@ -35,6 +41,7 @@ export type ResponseIziSwapKLinesRecord = {
     close: string;
 
     volume: string; // trade volume usd value of period
+    status: iZiSwapKLinesStatusEnum;
 };
 
 export type ResponseKlineTokenMeta = {

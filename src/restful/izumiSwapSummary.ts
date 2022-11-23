@@ -44,26 +44,37 @@ export type ResponseIziSwapPoolSummaryRecord = {
     tokenY_address: string;
     timestamp: number;
 
+    // locked usd value
     tvl: number;
     tvlX: number;
     tvlY: number;
+    // locked amount
     amountX: number;
     amountY: number;
 
+    // trade volume/fee usd value
     volDay: number;
     volWeek: number;
     feesDay: number;
     feesWeek: number;
 
+    // trade volume usd value
     volX_day: number;
     volY_day: number;
     volX_week: number;
     volY_week: number;
 
+    // trade fee usd value
     feesX_day: number;
     feesY_day: number;
     feesX_week: number;
     feesY_week: number;
+
+    // trade volume amount
+    volAmtX_day: number;
+    volAmtY_day: number;
+    volAmtX_week: number;
+    volAmtY_week: number;
 };
 
 export type ResponseIziSwapTokenSummaryRecord = {
