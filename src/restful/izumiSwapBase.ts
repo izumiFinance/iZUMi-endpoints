@@ -161,7 +161,7 @@ export type ResponseIziPoolRecord = {
     tokenY_decimals: number;
     txHash: string;
 
-    model: iZiSwapMetaModeEnum;
+    mode: iZiSwapMetaModeEnum;
 };
 
 export type ResponseIziSwapTokenRecord = {
