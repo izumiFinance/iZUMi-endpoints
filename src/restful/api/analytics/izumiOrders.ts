@@ -12,6 +12,7 @@ export type RequestIziSwapOrderRecord = {
     account_addr: string;   // account addr
     time_start?: string;    // 2022-02-01 00:00:00 like
     time_end?: string;
+    chain_id?: number;
 
     // time or -time, choices: time
     order_by?: string;
@@ -25,6 +26,7 @@ export type ResponseIziSwapOrderRecord = {
     fee: number;
     account_addr: string;
     record_time: string;
+    transaction_hash: string;
 
     token_in: string;
     token_in_symbol: string;
