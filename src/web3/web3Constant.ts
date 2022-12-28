@@ -17,6 +17,9 @@ export enum ChainId {
     Harmony = 1666600000,
     HarmonyTestnet = 1666700000,
     Cronos = 25,
+    ZkSyncAlphaTest = 280,
+    MantleTest = 5001,
+    ScrollTestL2 = 534354,
 }
 
 export enum TokenSymbol {
