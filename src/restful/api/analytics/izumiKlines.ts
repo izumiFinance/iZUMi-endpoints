@@ -19,6 +19,7 @@ export enum iZiSwapKLinesStatusEnum {
 }
 
 export type RequestIziSwapKLinesRecord = {
+    chain_id: number;
     identity: string; // pool addr
     interval: iZiSwapKLinesRecordEnum;
     time_start?: string; // 2022-02-01 00:00:00 like
@@ -48,24 +49,24 @@ export type ResponseKlineTokenMeta = {
     address: string;
     symbol: string;
     decimal: number;
-}
+};
 
 export type ResponseKlinePoolMeta = {
     address: string;
     chainId: number;
     fee: number;
 
-    initialPrice: number;       // price of pool created
-    dealTimestamp: number;      // last deal time
-    latestDealPrice: number;    // last deal price
-    dayPriceChange: number;     // price change rate of day, multi 100 to percent
-}
+    initialPrice: number; // price of pool created
+    dealTimestamp: number; // last deal time
+    latestDealPrice: number; // last deal price
+    dayPriceChange: number; // price change rate of day, multi 100 to percent
+};
 
 export type ResponseKlineInfoMeta = {
     tokenX: ResponseKlineTokenMeta;
     tokenY: ResponseKlineTokenMeta;
     pool: ResponseKlinePoolMeta;
-}
+};
 
 export const getIziSwapKLinesRecord: RequestNormalGeneric<RequestIziSwapKLinesRecord, ResponseIziSwapKLinesRecord[]> = async (params) => {
     return axios.get(ENDPOINTS.izumiSwap.klines, { params });
