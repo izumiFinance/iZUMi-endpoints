@@ -15,6 +15,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xd1B4D87f69e0B7bd86A6f9525E25C9ccBaD008Ee',
     [ChainId.MantleTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ScrollTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.BedrockRolluxTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -31,6 +32,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0x5478321c39E983CCc04743F2fD17D348876b55c8',
     [ChainId.MantleTest]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
     [ChainId.ScrollTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.BedrockRolluxTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -47,6 +49,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xdFA454b8BdA6B0b315852d178F00DE83D7739b2e',
     [ChainId.MantleTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.ScrollTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.BedrockRolluxTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -63,6 +66,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0x33d1BA78bA27aBF3244aE60930cC33E92F2C8413',
     [ChainId.MantleTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ScrollTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.BedrockRolluxTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -78,6 +82,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xCcf32Ff9319BF332e48F4b49957307b953A06da9',
     [ChainId.MantleTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.ScrollTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.BedrockRolluxTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
