@@ -170,7 +170,7 @@ export type ResponseIziSwapTokenRecord = {
     symbol: string;
     decimals: number;
 
-    model: iZiSwapMetaModeEnum;
+    mode: iZiSwapMetaModeEnum;
 };
 
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
