@@ -22,6 +22,7 @@ export enum ChainId {
     ScrollTestL2 = 534354,
     Icplaza = 9000,
     BedrockRolluxTestL2 = 57000,
+    ConfluxESpace = 1030,
 }
 
 export enum TokenSymbol {
