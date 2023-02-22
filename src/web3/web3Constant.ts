@@ -23,6 +23,7 @@ export enum ChainId {
     Icplaza = 9000,
     BedrockRolluxTestL2 = 57000,
     ConfluxESpace = 1030,
+    Meter = 82,
 }
 
 export enum TokenSymbol {
