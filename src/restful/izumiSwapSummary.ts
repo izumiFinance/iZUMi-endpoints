@@ -121,8 +121,11 @@ export type ResponseIziSwapSummaryNormalRecord = {
     volWeek: number;
     feesDay: number;
     feesWeek: number;
+
     uniqueDayUser: number;
+    swapDayCount: number;
     swapCount: number;
+    uniqueUser: number;
 
     timestamp: number;
 };
