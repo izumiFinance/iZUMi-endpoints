@@ -19,6 +19,8 @@ export enum ChainId {
     Cronos = 25,
     ZkSyncAlphaTest = 280,
     ZkSyncEra = 324,
+    Ontology = 58,
+
     MantleTest = 5001,
     ScrollTestL2 = 534354,
     Icplaza = 9000,
