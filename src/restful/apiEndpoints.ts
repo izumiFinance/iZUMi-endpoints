@@ -66,4 +66,7 @@ export const ENDPOINTS = {
     tokenInfo: {
         details: `${parentEndpoint}/token_info/details/`,
     },
+    liquidity: {
+        apr: `${gameParentEndpoint}/monitor/apr/`,
+    },
 };
