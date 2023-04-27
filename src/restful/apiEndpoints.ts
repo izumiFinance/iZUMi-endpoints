@@ -13,7 +13,7 @@ const api_host_config: Record<string, string> = {
 };
 
 const game_api_host_config: Record<string, string> = {
-    development: 'alpha.izumi.finance',
+    development: 'data.izumi.finance',
     production: 'data.izumi.finance',
     local: 'localhost:8000',
 };
