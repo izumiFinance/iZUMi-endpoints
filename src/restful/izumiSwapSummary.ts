@@ -91,6 +91,7 @@ export type ResponseIziSwapTokenSummaryRecord = {
     priceDay: number;
     priceWeek: number;
 
+    // trade/fees volume usd value
     volDay: number;
     volWeek: number;
     feesDay: number;
