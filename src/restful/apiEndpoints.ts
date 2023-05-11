@@ -69,4 +69,7 @@ export const ENDPOINTS = {
     liquidity: {
         apr: `${gameParentEndpoint}/monitor/apr/`,
     },
+    iPoints: {
+        points: `${gameParentEndpoint}/ipoints/info/`,
+    },
 };

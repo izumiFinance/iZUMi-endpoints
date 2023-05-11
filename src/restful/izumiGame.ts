@@ -130,3 +130,28 @@ export type ResponseClaimHistory = {
 export const getClaimHistory: RequestNormal<RequestClaimHistory, ResponseClaimHistory[]> = async (params) => {
     return axios.get(ENDPOINTS.game.history, { params });
 };
+
+export type RequestIPointsInfo = {
+    address: string;
+    chainId: number;
+};
+
+export type ResponseIPointsInfo = {
+    totalPoints: number;
+    weekPoints: number;
+    swapVolume: number;
+    lpStatus: {
+        value: number;
+        time500: number;
+        time5000: number;
+    };
+    history: {
+        time: string;
+        type: string;
+        points: number;
+    }[];
+};
+
+export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
+    return axios.get(ENDPOINTS.iPoints.points, { params });
+};
