@@ -22,7 +22,7 @@ export enum ChainId {
     Ontology = 58,
 
     MantleTest = 5001,
-    ScrollTestL2 = 534354,
+    ScrollTestL2 = 534353,
     Icplaza = 9000,
     BedrockRolluxTestL2 = 57000,
     ConfluxESpace = 1030,
