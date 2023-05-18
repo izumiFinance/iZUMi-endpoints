@@ -20,6 +20,7 @@ export enum ChainId {
     ZkSyncAlphaTest = 280,
     ZkSyncEra = 324,
     Ontology = 58,
+    Ultron = 1231,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,

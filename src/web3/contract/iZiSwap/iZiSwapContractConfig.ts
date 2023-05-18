@@ -13,6 +13,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Meter]: '0x07aBf894D5C25E626bb30f75eFC728a1d86BEeDC',
     [ChainId.ZkSyncEra]: '0x936c9A1B8f88BFDbd5066ad08e5d773BC82EB15F',
     [ChainId.Ontology]: '0x110dE362cc436D7f54210f96b8C7652C2617887D',
+    [ChainId.Ultron]: '0xcA7e21764CD8f7c1Ec40e651E25Da68AeD096037',
 
     [ChainId.BSCTestnet]: '0x6bEae78975e561fDF27AaC6f09F714E69191DcfD', // 2022.05.10
     [ChainId.AuroraTestnet]: '0xEa0f268a066dF3329283b0AF7560e19B89c35511',
@@ -34,6 +35,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.Meter]: '0xB62315104a49C26521695600Be1f8c5C7F6DaCC4',
     [ChainId.ZkSyncEra]: '0x8b9D7D609a83B2f69D2135786a7D230043AF7283',
     [ChainId.Ontology]: '0x1502d025BfA624469892289D45C0352997251728',
+    [ChainId.Ultron]: '0x1CB60033F61e4fc171c963f0d2d3F63Ece24319c',
 
     [ChainId.BSCTestnet]: '0x310Cf0521f40e7e4C93DA9425D84f2238fE21386', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
@@ -55,6 +57,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Meter]: '0x6960A7151d3310804aFA9CaD2c7415f9564BE03e',
     [ChainId.ZkSyncEra]: '0x9606eC131EeC0F84c95D82c9a63959F2331cF2aC',
     [ChainId.Ontology]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
+    [ChainId.Ultron]: '0x1D377311b342633A970e71a787C50F83858BFC1B',
 
     [ChainId.BSCTestnet]: '0xbf3c71a3ce55815138504727AD0f1F3B7101bd70', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
@@ -76,6 +79,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Meter]: '0x2C34664e5cD0981d44d237F1D7D3A09039D77E34',
     [ChainId.ZkSyncEra]: '0x377EC7c9ae5a0787F384668788a1654249059dD6',
     [ChainId.Ontology]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
+    [ChainId.Ultron]: '0x032b241De86a8660f1Ae0691a4760B426EA246d7',
 
     [ChainId.BSCTestnet]: '0xF5857d1A015f7dAFd8f59BD59Ff7bbc686b02ce9', // 2022.06.06
     [ChainId.AuroraTestnet]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
@@ -96,6 +100,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.Meter]: '0xFCA4de999fed6Fa40F32Ba014d15Be2e9373F370',
     [ChainId.ZkSyncEra]: '0x3EC82C07981D6D213DA9bd35A0ba4cd324feA438',
     [ChainId.Ontology]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
+    [ChainId.Ultron]: '0xe6805638db944eA605e774e72c6F0D15Fb6a1347',
 
     [ChainId.BSCTestnet]: null,
     [ChainId.AuroraTestnet]: null,
@@ -113,6 +118,7 @@ export const BOX_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Meter]: '0xbF83D435c7859d6A7bF529AD9720abD21F8F4025',
     [ChainId.ZkSyncEra]: '0x7dEe7de9814ed6C1e20B3E4E2fA9b1B96E15FDe1',
     [ChainId.Ontology]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
+    [ChainId.Ultron]: '0xe4A0b241D8345d86FB140D40c87C5fbDd685B9dd',
 
     [ChainId.BSCTestnet]: '0x904C130a8bf933f5c11Ea58CAA306f2296db22af', // 2022.07.25
 };

@@ -36,12 +36,12 @@ export type RequestIziSwapKLinesRecord = {
 export type ResponseIziSwapKLinesRecord = {
     timestamp: number; // begin time of period
 
-    open: string;
-    high: string;
-    low: string;
-    close: string;
+    open: number;
+    high: number;
+    low: number;
+    close: number;
 
-    volume: string; // trade volume usd value of period
+    volume: number; // trade volume usd value of period
     status: iZiSwapKLinesStatusEnum;
 };
 
