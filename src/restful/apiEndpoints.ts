@@ -18,10 +18,12 @@ const game_api_host_config: Record<string, string> = {
     local: 'localhost:8000',
 };
 
+const env = process.env?.REACT_APP_ENDPOINT ?? process.env.REACT_APP_ENV;
+
 const config: APIConfig = {
-    protocol: process.env.REACT_APP_ENV === 'local' ? 'http://' : 'https://',
-    root: api_host_config[process.env.REACT_APP_ENV as string],
-    game_root: game_api_host_config[process.env.REACT_APP_ENV as string],
+    protocol: env === 'local' ? 'http://' : 'https://',
+    root: api_host_config[env as string],
+    game_root: game_api_host_config[env as string],
     prefix: 'api',
     version: 'v1',
 };
