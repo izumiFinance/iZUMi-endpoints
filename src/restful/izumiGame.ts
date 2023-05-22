@@ -139,12 +139,16 @@ export type RequestIPointsInfo = {
 export type ResponseIPointsInfo = {
     totalPoints: number;
     weekPoints: number;
-    swapVolume: number;
+    swapVolume: {
+        spotToken: string;
+        swapVolume: number;
+        rewardIpoints: number;
+    }[];
     lpStatus: {
-        value: number;
-        time500: number;
-        time5000: number;
-    };
+        requiredValue: 500 | 5000;
+        validHoldingTimeSeconds: number;
+        rewardIpoints: number;
+    }[];
     history: {
         time: string;
         type: string;
