@@ -21,6 +21,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.MantleTest]: '0xaDd9336AB4a795a66E4E1820f5d347c4294dd76a',
     [ChainId.ScrollTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.BedrockRolluxTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.LineaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -43,6 +44,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.MantleTest]: '0xfc88C03eea05aCd91e394d418B73978D6AF10E94',
     [ChainId.ScrollTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.BedrockRolluxTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.LineaTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -65,6 +67,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.MantleTest]: '0x3A507CB35fcDe6445EF6e3D44D836f81d24374B8',
     [ChainId.ScrollTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.BedrockRolluxTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.LineaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -87,6 +90,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.MantleTest]: '0xa847ffbeB5fD9F302ec6f5C38Cfd18E3b58c020f',
     [ChainId.ScrollTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.BedrockRolluxTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.LineaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -108,6 +112,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.MantleTest]: '0xffCE438BB30D468f78F12BB9d9e237B7D3Eb8bd8',
     [ChainId.ScrollTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.BedrockRolluxTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.LineaTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
@@ -119,6 +124,7 @@ export const BOX_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncEra]: '0x7dEe7de9814ed6C1e20B3E4E2fA9b1B96E15FDe1',
     [ChainId.Ontology]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.Ultron]: '0xe4A0b241D8345d86FB140D40c87C5fbDd685B9dd',
+    [ChainId.LineaTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 
     [ChainId.BSCTestnet]: '0x904C130a8bf933f5c11Ea58CAA306f2296db22af', // 2022.07.25
 };
