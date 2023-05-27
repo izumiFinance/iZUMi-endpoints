@@ -7,7 +7,7 @@ interface APIConfig {
 }
 
 const api_host_config: Record<string, string> = {
-    development: 'alpha.izumi.finance',
+    development: 'alpha-api.izumi.finance',
     production: 'api.izumi.finance',
     local: 'localhost:8000',
 };
