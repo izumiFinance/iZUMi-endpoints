@@ -2,6 +2,10 @@ import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal } from './apiUtils';
 
+export enum AprTypeEnum {
+    Recommend = 0,
+    Pool = 1,
+}
 export type LiquidityApr = {
     leftRange: number;
     rightRange: number;
@@ -11,6 +15,7 @@ export type LiquidityApr = {
 export type RequestLiquidityApr = {
     address: string;
     chainId: number;
+    type?: AprTypeEnum;
 };
 
 export const getLiquidityApr: RequestNormal<RequestLiquidityApr, LiquidityApr[]> = async (params) => {
