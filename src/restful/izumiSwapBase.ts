@@ -162,6 +162,7 @@ export type ResponseIziPoolRecord = {
     txHash: string;
 
     mode: iZiSwapMetaModeEnum;
+    validRange: number;
 };
 
 export type ResponseIziSwapTokenRecord = {

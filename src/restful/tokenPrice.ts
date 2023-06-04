@@ -13,6 +13,16 @@ export type RequestTokenPrice = {
     symbol?: string;
 };
 
+export type RequestTokenSymbolListPrice = {
+    chain_id: number;
+    symbolList: string[];
+};
+
+export type RequestTokenSymbolPrice = {
+    chain_id: number;
+    symbol: string[];
+};
+
 /**
  * 根据 symbol 获取注册过的 Token 价格数据
  */
@@ -26,6 +36,25 @@ export const getTokenPriceBySymbol: RequestNormal<string | undefined, number> = 
 export const getTokenPriceBySymbolList: RequestNormal<string[], ResponseTokenListPrice> = (symbolList) => {
     const listParams = new URLSearchParams();
     symbolList.forEach((s) => listParams.append('t', s));
+    return axios.get(ENDPOINTS.priceInfo.price_info, { params: listParams });
+};
+
+/**
+ * 根据 symbol 获取注册过的 Token 价格数据
+ * 需指定 chain
+ */
+export const getChainTokenPriceBySymbol: RequestNormal<RequestTokenSymbolPrice, number> = async (params) => {
+    return axios.get(`${ENDPOINTS.priceInfo.price_info}${params.symbol}/?chain_id=${params.chain_id}`);
+};
+
+/**
+ * 根据 symbolList 批量获取注册过的 Token 价格数据
+ * 需指定 chain
+ */
+export const getChainTokenPriceBySymbolList: RequestNormal<RequestTokenSymbolListPrice, ResponseTokenListPrice> = (params) => {
+    const listParams = new URLSearchParams();
+    params.symbolList.forEach((s) => listParams.append('t', s));
+    listParams.append('chain_id', params.chain_id.toString());
     return axios.get(ENDPOINTS.priceInfo.price_info, { params: listParams });
 };
 
