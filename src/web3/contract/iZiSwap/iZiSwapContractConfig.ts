@@ -22,6 +22,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ScrollTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.BedrockRolluxTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.LineaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.OpsideTest]: '0x64c2F1306b4ED3183E7B345158fd01c19C0d8c5E',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -45,6 +46,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ScrollTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.BedrockRolluxTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.LineaTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.OpsideTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -53,7 +55,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ETC]: '0xe6805638db944eA605e774e72c6F0D15Fb6a1347', // 2022.08.11
     [ChainId.Cronos]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148', // 2022.08.11
     [ChainId.Arbitrum]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148', // 2022.08.11
-    [ChainId.Arbitrum]: '0x3F559139C2Fc7B97Ad6FE9B4d1f75149F551DB18',
+    [ChainId.Matic]: '0x3F559139C2Fc7B97Ad6FE9B4d1f75149F551DB18',
     [ChainId.Icplaza]: '0xE0c7b10009fC582beFE3cAFE777eC7E2753368aF',
     [ChainId.ConfluxESpace]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
     [ChainId.Meter]: '0x6960A7151d3310804aFA9CaD2c7415f9564BE03e',
@@ -68,6 +70,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ScrollTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.BedrockRolluxTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.LineaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.OpsideTest]: '0x551197e6350936976DfFB66B2c3bb15DDB723250',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -76,7 +79,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ETC]: '0xe4A0b241D8345d86FB140D40c87C5fbDd685B9dd', // 2022.08.11
     [ChainId.Cronos]: '0x2C6Df0fDbCE9D2Ded2B52A117126F2Dc991f770f', // 2022.08.11
     [ChainId.Arbitrum]: '0x25C030116Feb2E7BbA054b9de0915E5F51b03e31', // 2022.08.11
-    [ChainId.Arbitrum]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148',
+    [ChainId.Matic]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148',
     [ChainId.Icplaza]: '0x95308cD647F6f2a44c891BC685d6117b3d27e461',
     [ChainId.ConfluxESpace]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
     [ChainId.Meter]: '0x2C34664e5cD0981d44d237F1D7D3A09039D77E34',
@@ -91,6 +94,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ScrollTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.BedrockRolluxTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.LineaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.OpsideTest]: '0x876508837C162aCedcc5dd7721015E83cbb4e339',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -113,6 +117,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ScrollTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.BedrockRolluxTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.LineaTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.OpsideTest]: '0x6AECfe44225A50895e9EC7ca46377B9397D1Bb5b',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
@@ -125,6 +130,7 @@ export const BOX_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Ontology]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.Ultron]: '0xe4A0b241D8345d86FB140D40c87C5fbDd685B9dd',
     [ChainId.LineaTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
+    [ChainId.OpsideTest]: '0x6a7436775c0d0B70cfF4c5365404ec37c9d9aF4b',
 
     [ChainId.BSCTestnet]: '0x904C130a8bf933f5c11Ea58CAA306f2296db22af', // 2022.07.25
 };

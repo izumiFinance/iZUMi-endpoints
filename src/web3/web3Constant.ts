@@ -29,6 +29,7 @@ export enum ChainId {
     ConfluxESpace = 1030,
     Meter = 82,
     LineaTest = 59140,
+    OpsideTest = 51178,
 }
 
 export enum TokenSymbol {
