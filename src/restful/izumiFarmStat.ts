@@ -99,6 +99,42 @@ export type RequestContactInfo = {
     address: string;
 };
 
+export enum FarmTypeEnum {
+    Deposit = 0,
+    Withdraw = 1,
+    CollectReward = 2,
+}
+
+export type RequestFarmHistory = {
+    account_addr: string;
+    chain_id: number;
+
+    time_start?: string; // 2022-02-01 00:00:00 like
+    time_end?: string;
+    order_by?: string; // time or -time, major
+    page?: number; // start from 1
+    page_size?: number;
+};
+export type ResponseFarmHistory = {
+    nIZI: number; //boost izi number
+    value: number;
+    priceX: number;
+    priceY: number;
+    amountX: number;
+    amountY: number;
+    priceIZI: number;
+    liquidity: number;
+    timestamp: string;
+    token_id: number;
+    contract_addr: string;
+    tokenx_addr: string;
+    tokeny_addr: string;
+    amount: number;
+    rewardToken: string;
+    txHash?: string;
+    type: FarmTypeEnum;
+};
+
 export const getAllFarmStat: RequestNormal<RequestAllFarmStat, { data: ResponseAllFarmStat[] }> = async (params) => {
     return axios.get(ENDPOINTS.farm.stat, { params });
 };
@@ -113,4 +149,8 @@ export const getFarmArchiveTvl: RequestNormal<RequestFarmArchiveTvl, ResponseFar
 
 export const getContactInfo: RequestNormal<RequestContactInfo, ResponseContactInfo> = async (params) => {
     return axios.get(ENDPOINTS.farm.tool, { params });
+};
+
+export const getFarmHistory: RequestNormal<RequestFarmHistory, ResponseFarmHistory[]> = async (params) => {
+    return axios.get(ENDPOINTS.farm.history, { params });
 };
