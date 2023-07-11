@@ -21,15 +21,17 @@ export enum ChainId {
     ZkSyncEra = 324,
     Ontology = 58,
     Ultron = 1231,
+    Meter = 82,
+    Mantle = 5000,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
     Icplaza = 9000,
     BedrockRolluxTestL2 = 57000,
     ConfluxESpace = 1030,
-    Meter = 82,
     LineaTest = 59140,
     OpsideTest = 51178,
+    OpBNBTest = 5611,
 }
 
 export enum TokenSymbol {
