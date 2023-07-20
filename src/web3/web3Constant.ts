@@ -23,6 +23,7 @@ export enum ChainId {
     Ultron = 1231,
     Meter = 82,
     Mantle = 5000,
+    Linea = 59144,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
