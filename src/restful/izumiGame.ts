@@ -145,7 +145,7 @@ export type ResponseIPointsInfo = {
         rewardIpoints: number;
     }[];
     lpStatus: {
-        requiredValue: 500 | 5000;
+        requiredValue: number;
         validHoldingTimeSeconds: number;
         rewardIpoints: number;
     }[];
