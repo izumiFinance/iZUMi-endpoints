@@ -154,6 +154,7 @@ export type ResponseIPointsInfo = {
         type: string;
         points: number;
     }[];
+    lpVolume: number;
 };
 
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
