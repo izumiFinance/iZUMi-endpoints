@@ -160,3 +160,7 @@ export type ResponseIPointsInfo = {
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.points, { params });
 };
+
+export const getSkaleAirdrop: RequestNormal<string, ResponseIPointsInfo> = async (address) => {
+    return axios.get(ENDPOINTS.game.skale + address);
+};
