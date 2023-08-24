@@ -25,6 +25,7 @@ export enum ChainId {
     Meter = 82,
     Mantle = 5000,
     Linea = 59144,
+    OpBNB = 204,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
@@ -34,6 +35,7 @@ export enum ChainId {
     LineaTest = 59140,
     OpsideTest = 51178,
     OpBNBTest = 5611,
+    KromaSepoliaTest = 2358,
 }
 
 export enum TokenSymbol {
