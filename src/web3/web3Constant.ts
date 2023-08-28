@@ -29,6 +29,7 @@ export enum ChainId {
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
+    ScrollSepoliaTest = 534351,
     Icplaza = 9000,
     BedrockRolluxTestL2 = 57000,
     ConfluxESpace = 1030,
