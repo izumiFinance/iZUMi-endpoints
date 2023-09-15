@@ -27,6 +27,7 @@ export enum ChainId {
     Linea = 59144,
     OpBNB = 204,
     Kroma = 255,
+    Manta = 169,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
