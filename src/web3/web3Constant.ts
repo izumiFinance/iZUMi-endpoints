@@ -39,6 +39,7 @@ export enum ChainId {
     OpsideTest = 51178,
     OpBNBTest = 5611,
     KromaSepoliaTest = 2358,
+    GasZeroGoerliL2 = 12021,
 }
 
 export enum TokenSymbol {

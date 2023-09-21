@@ -33,6 +33,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.OpsideTest]: '0x64c2F1306b4ED3183E7B345158fd01c19C0d8c5E',
     [ChainId.OpBNBTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.KromaSepoliaTest]: '0x67A1f4A939b477A6b7c5BF94D97E45dE87E608eF',
+    [ChainId.GasZeroGoerliL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -67,6 +68,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.OpsideTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
     [ChainId.OpBNBTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.KromaSepoliaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.GasZeroGoerliL2]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -101,6 +103,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.OpsideTest]: '0x551197e6350936976DfFB66B2c3bb15DDB723250',
     [ChainId.OpBNBTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.KromaSepoliaTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
+    [ChainId.GasZeroGoerliL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -135,6 +138,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.OpsideTest]: '0x876508837C162aCedcc5dd7721015E83cbb4e339',
     [ChainId.OpBNBTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.KromaSepoliaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.GasZeroGoerliL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -168,6 +172,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.OpsideTest]: '0x6AECfe44225A50895e9EC7ca46377B9397D1Bb5b',
     [ChainId.OpBNBTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
     [ChainId.KromaSepoliaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.GasZeroGoerliL2]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
