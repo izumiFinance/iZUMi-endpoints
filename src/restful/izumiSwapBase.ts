@@ -177,6 +177,9 @@ export type ResponseIziSwapTokenRecord = {
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
     if ((params.chain_id ?? 0) <= 0) {
         params.chain_id = undefined;
+    } else if (params.type === undefined && params.contract_addr &&  params.chain_id) {
+        // avoid db index choose record_time as files sort
+        params.order_by = 'id';
     }
     return axios.get(ENDPOINTS.izumiSwap.trans_record, { params });
 };
