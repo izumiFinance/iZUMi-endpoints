@@ -28,6 +28,7 @@ export enum ChainId {
     OpBNB = 204,
     Kroma = 255,
     Manta = 169,
+    Scroll = 534352,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
@@ -40,6 +41,7 @@ export enum ChainId {
     OpBNBTest = 5611,
     KromaSepoliaTest = 2358,
     GasZeroGoerliL2 = 12021,
+    ZetaTest = 7001,
 }
 
 export enum TokenSymbol {
