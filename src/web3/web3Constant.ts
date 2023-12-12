@@ -43,6 +43,7 @@ export enum ChainId {
     GasZeroGoerliL2 = 12021,
     ZetaTest = 7001,
     X1Test = 195,
+    ZKFairTest = 43851,
 }
 
 export enum TokenSymbol {
