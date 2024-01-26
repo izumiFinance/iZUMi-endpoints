@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal } from './apiUtils';
-import mem from 'mem/dist';
+import mem from 'mem';
 
 export type ResponseTokenListPrice = Record<string, number>;
 
