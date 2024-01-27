@@ -1,5 +1,5 @@
 import axios from 'axios';
-import mem from 'mem/dist';
+import mem from 'mem';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal, RequestNormalGeneric } from './apiUtils';
 
