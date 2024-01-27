@@ -39,6 +39,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0x67A1f4A939b477A6b7c5BF94D97E45dE87E608eF',
     [ChainId.X1Test]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.ZKFairTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.MerlinTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -79,6 +80,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.X1Test]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ZKFairTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.MerlinTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -119,6 +121,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.X1Test]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.ZKFairTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.MerlinTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -159,6 +162,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -198,6 +202,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
