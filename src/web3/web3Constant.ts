@@ -30,6 +30,7 @@ export enum ChainId {
     Manta = 169,
     Scroll = 534352,
     ZKFair = 42766,
+    Zeta = 7000,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
