@@ -30,6 +30,7 @@ export enum ChainId {
     Manta = 169,
     Scroll = 534352,
     ZKFair = 42766,
+    Zeta = 7000,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
@@ -45,6 +46,7 @@ export enum ChainId {
     ZetaTest = 7001,
     X1Test = 195,
     ZKFairTest = 43851,
+    MerlinTest = 686868,
 }
 
 export enum TokenSymbol {

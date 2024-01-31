@@ -23,6 +23,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Manta]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
     [ChainId.Scroll]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
     [ChainId.ZKFair]: '0x110dE362cc436D7f54210f96b8C7652C2617887D',
+    [ChainId.Zeta]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
 
     [ChainId.BSCTestnet]: '0x6bEae78975e561fDF27AaC6f09F714E69191DcfD', // 2022.05.10
     [ChainId.AuroraTestnet]: '0xEa0f268a066dF3329283b0AF7560e19B89c35511',
@@ -39,6 +40,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0x67A1f4A939b477A6b7c5BF94D97E45dE87E608eF',
     [ChainId.X1Test]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.ZKFairTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.MerlinTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -63,6 +65,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.Manta]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
     [ChainId.Scroll]: '0x19b683A2F45012318d9B2aE1280d68d3eC54D663',
     [ChainId.ZKFair]: '0x1502d025BfA624469892289D45C0352997251728',
+    [ChainId.Zeta]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
 
     [ChainId.BSCTestnet]: '0x310Cf0521f40e7e4C93DA9425D84f2238fE21386', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
@@ -79,6 +82,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.X1Test]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ZKFairTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.MerlinTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -103,6 +107,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Manta]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
     [ChainId.Scroll]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
     [ChainId.ZKFair]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
+    [ChainId.Zeta]: '0x34bc1b87f60e0a30c0e24FD7Abada70436c71406',
 
     [ChainId.BSCTestnet]: '0xbf3c71a3ce55815138504727AD0f1F3B7101bd70', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
@@ -119,6 +124,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.X1Test]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.ZKFairTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.MerlinTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -143,6 +149,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.Manta]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.Scroll]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
     [ChainId.ZKFair]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
+    [ChainId.Zeta]: '0x3F559139C2Fc7B97Ad6FE9B4d1f75149F551DB18',
 
     [ChainId.BSCTestnet]: '0xF5857d1A015f7dAFd8f59BD59Ff7bbc686b02ce9', // 2022.06.06
     [ChainId.AuroraTestnet]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
@@ -159,6 +166,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -182,6 +190,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.Manta]: '0x34bc1b87f60e0a30c0e24FD7Abada70436c71406',
     [ChainId.Scroll]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.ZKFair]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
+    [ChainId.Zeta]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148',
 
     [ChainId.BSCTestnet]: null,
     [ChainId.AuroraTestnet]: null,
@@ -198,6 +207,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ZetaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
