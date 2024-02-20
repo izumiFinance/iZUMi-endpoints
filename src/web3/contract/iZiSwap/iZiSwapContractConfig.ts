@@ -41,6 +41,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.X1Test]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.ZKFairTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.MerlinTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
+    [ChainId.BeraTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -83,6 +84,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.X1Test]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ZKFairTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.MerlinTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.BeraTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -125,6 +127,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.X1Test]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.ZKFairTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.MerlinTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.BeraTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -167,6 +170,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.BeraTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -208,6 +212,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.X1Test]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZKFairTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.MerlinTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.BeraTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {
