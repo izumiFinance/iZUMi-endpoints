@@ -172,22 +172,26 @@ export type ResponseIziSwapTokenRecord = {
     decimals: number;
 
     mode: iZiSwapMetaModeEnum;
+    totalSupply: number;
+    validRange: number;
 };
 
 export const getIziSwapTransRecord: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
     if ((params.chain_id ?? 0) <= 0) {
         params.chain_id = undefined;
-    } else if (params.type === undefined && params.contract_addr &&  params.chain_id) {
+    } else if (params.type === undefined && params.contract_addr && params.chain_id) {
         // avoid db index choose record_time as files sort
         params.order_by = 'id';
     }
     return axios.get(ENDPOINTS.izumiSwap.trans_record, { params });
 };
 
-export const getIziSwapTransAggregateRecord: RequestNormal<RequestIziSwapTransAggregateRecord, ResponseIziSwapTransAggregateRecord[]> =
-    async (params) => {
-        return axios.get(ENDPOINTS.izumiSwap.trans_record_aggregate, { params });
-    };
+export const getIziSwapTransAggregateRecord: RequestNormal<
+    RequestIziSwapTransAggregateRecord,
+    ResponseIziSwapTransAggregateRecord[]
+> = async (params) => {
+    return axios.get(ENDPOINTS.izumiSwap.trans_record_aggregate, { params });
+};
 
 export type ResponseGenericIziSwapMetaRecord = ResponseIziPoolRecord | ResponseIziSwapTokenRecord;
 

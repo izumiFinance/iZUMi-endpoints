@@ -100,6 +100,7 @@ export type ResponseIziSwapTokenSummaryRecord = {
     feesWeek: number;
 
     timestamp: number;
+    fdv: number;
 };
 
 export type ResponseIziSwapPoolLiquiditySnapshotRecord = ResponseBasicIziSwapPoolRecord & {
@@ -147,13 +148,15 @@ const LATEST_TYPE = new Set<SummaryRecordTypeEnum>([
     SummaryRecordTypeEnum.IZI_POOL_TOKEN_LATEST,
 ]);
 
-export const getIziSwapGenericSummaryRecord: RequestNormalGeneric<RequestIziSwapSummaryRecord, ResponseGenericIziSwapPoolSummary[]> =
-    async (params) => {
-        if (params.type !== undefined && LATEST_TYPE.has(params.type) && (params.chain_id ?? 0) <= 0) {
-            params.chain_id = undefined;
-        }
-        if (params.type === SummaryRecordTypeEnum.IZI_POOL_OF_CHAIN_LATEST && params.chain_id === undefined) {
-            params.chain_id = 0;
-        }
-        return axios.get(ENDPOINTS.izumiSwap.summary_record, { params });
-    };
+export const getIziSwapGenericSummaryRecord: RequestNormalGeneric<
+    RequestIziSwapSummaryRecord,
+    ResponseGenericIziSwapPoolSummary[]
+> = async (params) => {
+    if (params.type !== undefined && LATEST_TYPE.has(params.type) && (params.chain_id ?? 0) <= 0) {
+        params.chain_id = undefined;
+    }
+    if (params.type === SummaryRecordTypeEnum.IZI_POOL_OF_CHAIN_LATEST && params.chain_id === undefined) {
+        params.chain_id = 0;
+    }
+    return axios.get(ENDPOINTS.izumiSwap.summary_record, { params });
+};
