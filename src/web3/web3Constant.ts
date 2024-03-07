@@ -51,6 +51,7 @@ export enum ChainId {
     TaikoKatlaL2Test = 167008,
     MorphTest = 2710,
     BeraTest = 80085,
+    ZklinkTest = 810182,
 }
 
 export enum TokenSymbol {
