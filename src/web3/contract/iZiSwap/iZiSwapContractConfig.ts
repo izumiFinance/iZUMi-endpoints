@@ -25,6 +25,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZKFair]: '0x110dE362cc436D7f54210f96b8C7652C2617887D',
     [ChainId.Zeta]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
     [ChainId.Blast]: '0x5e7902aDf0Ea0ff827683Cc1d431F740CAD0731b',
+    [ChainId.Zklink]: '0x936c9A1B8f88BFDbd5066ad08e5d773BC82EB15F',
 
     [ChainId.BSCTestnet]: '0x6bEae78975e561fDF27AaC6f09F714E69191DcfD', // 2022.05.10
     [ChainId.AuroraTestnet]: '0xEa0f268a066dF3329283b0AF7560e19B89c35511',
@@ -72,6 +73,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ZKFair]: '0x1502d025BfA624469892289D45C0352997251728',
     [ChainId.Zeta]: '0x3EF68D3f7664b2805D4E88381b64868a56f88bC4',
     [ChainId.Blast]: '0x3252da4D17dd11E0326d82497Da26AE404C74F09',
+    [ChainId.Zklink]: '0x8b9D7D609a83B2f69D2135786a7D230043AF7283',
 
     [ChainId.BSCTestnet]: '0x310Cf0521f40e7e4C93DA9425D84f2238fE21386', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
@@ -119,6 +121,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZKFair]: '0x02F55D53DcE23B4AA962CC68b0f685f26143Bdb2',
     [ChainId.Zeta]: '0x34bc1b87f60e0a30c0e24FD7Abada70436c71406',
     [ChainId.Blast]: '0xA3F50FeBA40dd3E884688C0AF72C4054D07a1c50',
+    [ChainId.Zklink]: '0x377EC7c9ae5a0787F384668788a1654249059dD6',
 
     [ChainId.BSCTestnet]: '0xbf3c71a3ce55815138504727AD0f1F3B7101bd70', // 2022.05.10
     [ChainId.AuroraTestnet]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
@@ -166,6 +169,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZKFair]: '0x2db0AFD0045F3518c77eC6591a542e326Befd3D7',
     [ChainId.Zeta]: '0x3F559139C2Fc7B97Ad6FE9B4d1f75149F551DB18',
     [ChainId.Blast]: '0x7e97337AF2c13cCc132Ead0BB71983a24065F624',
+    [ChainId.Zklink]: '0x3EC82C07981D6D213DA9bd35A0ba4cd324feA438',
 
     [ChainId.BSCTestnet]: '0xF5857d1A015f7dAFd8f59BD59Ff7bbc686b02ce9', // 2022.06.06
     [ChainId.AuroraTestnet]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
@@ -212,6 +216,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ZKFair]: '0x33531bDBFE34fa6Fd5963D0423f7699775AacaaF',
     [ChainId.Zeta]: '0x04830cfCED9772b8ACbAF76Cfc7A630Ad82c9148',
     [ChainId.Blast]: '0xd413b415Bf8449D6DB8238826579647bfDb60a9f',
+    [ChainId.Zklink]: '0x7dEe7de9814ed6C1e20B3E4E2fA9b1B96E15FDe1',
 
     [ChainId.BSCTestnet]: null,
     [ChainId.AuroraTestnet]: null,

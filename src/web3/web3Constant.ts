@@ -32,6 +32,7 @@ export enum ChainId {
     ZKFair = 42766,
     Zeta = 7000,
     Blast = 81457,
+    Zklink = 810180,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
