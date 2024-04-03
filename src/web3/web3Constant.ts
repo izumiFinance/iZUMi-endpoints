@@ -34,6 +34,7 @@ export enum ChainId {
     Blast = 81457,
     Zklink = 810180,
     Mode = 34443,
+    XLayer = 196,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
