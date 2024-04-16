@@ -9,14 +9,14 @@ export enum iZiSwapOrderTypeEnum {
 }
 
 export type RequestIziSwapOrderRecord = {
-    account_addr: string;   // account addr
-    time_start?: string;    // 2022-02-01 00:00:00 like
+    account_addr: string; // account addr
+    time_start?: string; // 2022-02-01 00:00:00 like
     time_end?: string;
     chain_id?: number;
 
     // time or -time, choices: time
     order_by?: string;
-    page?: number;      // start from 1
+    page?: number; // start from 1
     page_size?: number; // default 10
 };
 
@@ -35,12 +35,49 @@ export type ResponseIziSwapOrderRecord = {
     token_out_symbol: string;
 
     type: iZiSwapOrderTypeEnum;
-    amount_in: string;          // initAmountIn for LIMIT_CANCEL or LIMIT_FINISH, inAmount for MARKET
-    amount_in_remain: string;   // only for LIMIT_CANCEL
+    amount_in: string; // initAmountIn for LIMIT_CANCEL or LIMIT_FINISH, inAmount for MARKET
+    amount_in_remain: string; // only for LIMIT_CANCEL
     amount_out: string;
     price: string;
 };
 
+export type RequestCrossOrderRecord = {
+    account_addr: string; // account addr
+    src_chain_id?: number;
+
+    time_start?: string; // 2022-02-01 00:00:00 like
+    time_end?: string;
+    // time or -time, choices: time
+    order_by?: string;
+    page?: number; // start from 1
+    page_size?: number; // default 10
+};
+
+export enum CrossMessageStatus {
+    INFLIGHT = 0,
+    DELIVERED = 1,
+    FAILED = -1,
+}
+
+export type ResponseCrossOrderRecord = {
+    account_addr: string;
+    src_chain_id: string;
+    dst_chain_id: string;
+    status: CrossMessageStatus;
+    src_token_address: string;
+    // dst_token_address: string;
+    src_amount: number;
+    dst_amount: number;
+    src_txhash: string;
+    dst_txhash: string;
+    created_timestamp: string;
+    updated_timestamp: string;
+};
+
 export const getIziSwapOrderRecord: RequestNormalGeneric<RequestIziSwapOrderRecord, ResponseIziSwapOrderRecord[]> = async (params) => {
     return axios.get(ENDPOINTS.izumiSwap.order_record, { params });
+};
+
+export const getCrossOrderRecord: RequestNormalGeneric<RequestCrossOrderRecord, ResponseCrossOrderRecord[]> = async (params) => {
+    return axios.get(ENDPOINTS.cross.order_record, { params });
 };

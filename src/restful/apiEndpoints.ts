@@ -2,6 +2,7 @@ interface APIConfig {
     protocol: string;
     root: string;
     game_root: string;
+    subapi: string;
     prefix: string;
     version: string;
 }
@@ -18,12 +19,19 @@ const game_api_host_config: Record<string, string> = {
     local: 'localhost:8000',
 };
 
+const sub_api_host_config: Record<string, string> = {
+    development: 'subapi.izumi.finance',
+    production: 'subapi.izumi.finance',
+    local: 'localhost:8000',
+};
+
 const env = process.env?.REACT_APP_ENDPOINT ?? process.env.REACT_APP_ENV;
 
 const config: APIConfig = {
     protocol: env === 'local' ? 'http://' : 'https://',
     root: api_host_config[env as string],
     game_root: game_api_host_config[env as string],
+    subapi: sub_api_host_config[env as string],
     prefix: 'api',
     version: 'v1',
 };
@@ -31,6 +39,7 @@ const config: APIConfig = {
 const productionEndpoint = `https://${api_host_config['production']}/${config.prefix}/${config.version}`;
 export const parentEndpoint = `${config.protocol}${config.root}/${config.prefix}/${config.version}`;
 export const gameParentEndpoint = `${config.protocol}${config.game_root}/${config.prefix}/${config.version}`;
+export const subParentEndpoint = `${config.protocol}${config.subapi}/${config.prefix}/${config.version}`;
 
 export const ENDPOINTS = {
     farm: {
@@ -75,5 +84,8 @@ export const ENDPOINTS = {
     },
     iPoints: {
         points: `${gameParentEndpoint}/ipoints/info/`,
+    },
+    cross: {
+        order_record: `${subParentEndpoint}/cross_chain/cross_chain_record/`,
     },
 };
