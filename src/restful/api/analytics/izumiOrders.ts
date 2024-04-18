@@ -54,9 +54,9 @@ export type RequestCrossOrderRecord = {
 };
 
 export enum CrossMessageStatus {
-    INFLIGHT = 0,
-    DELIVERED = 1,
-    FAILED = -1,
+    INFLIGHT = 'INFLIGHT',
+    DELIVERED = 'DELIVERED',
+    FAILED = 'FAILED',
 }
 
 export type ResponseCrossOrderRecord = {
