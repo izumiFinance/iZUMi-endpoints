@@ -52,6 +52,7 @@ export enum ChainId {
     ZKFairTest = 43851,
     MerlinTest = 686868,
     TaikoKatlaL2Test = 167008,
+    TaikoHeklaL2Test = 167009,
     MorphTest = 2710,
     BeraTest = 80085,
     ZklinkTest = 810182,
