@@ -158,8 +158,17 @@ export type ResponseIPointsInfo = {
     totalPointsOnChain: number;
 };
 
+export type ResponseLPIPointsInfo = {
+    lpIpoints: number;
+    volume: number;
+};
+
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.points, { params });
+};
+
+export const getLPIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseLPIPointsInfo> = async (params) => {
+    return axios.get(ENDPOINTS.iPoints.lp_points, { params });
 };
 
 export const getSkaleAirdrop: RequestNormal<string, ResponseIPointsInfo> = async (address) => {
