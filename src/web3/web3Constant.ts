@@ -35,6 +35,7 @@ export enum ChainId {
     Zklink = 810180,
     Mode = 34443,
     XLayer = 196,
+    Bob = 60808,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
