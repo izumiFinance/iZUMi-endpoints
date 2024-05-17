@@ -163,6 +163,18 @@ export type ResponseLPIPointsInfo = {
     volume: number;
 };
 
+export type RequestBOBIPointsInfo = {
+    account: string;
+};
+
+export type ResponseBOBIPointsInfo = {
+    total_spice: number;
+    history: {
+        spice: number;
+        time: number;
+    }[];
+};
+
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.points, { params });
 };
@@ -173,4 +185,8 @@ export const getLPIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseLPIPoin
 
 export const getSkaleAirdrop: RequestNormal<string, ResponseIPointsInfo> = async (address) => {
     return axios.get(ENDPOINTS.game.skale + address);
+};
+
+export const getBOBIPointsInfo: RequestNormal<RequestBOBIPointsInfo, ResponseBOBIPointsInfo> = async (params) => {
+    return axios.get(ENDPOINTS.iPoints.bob_points, { params });
 };
