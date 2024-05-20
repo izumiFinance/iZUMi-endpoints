@@ -167,9 +167,16 @@ export type RequestBOBIPointsInfo = {
     account: string;
 };
 
+export enum BOBIPointsInfoEnum {
+    TVL = 1,
+    GAS = 2,
+}
+
 export type ResponseBOBIPointsInfo = {
-    total_spice: number;
+    total_tvl_spice: number;
+    total_gas_spice: number;
     history: {
+        type: BOBIPointsInfoEnum;
         spice: number;
         time: number;
     }[];
