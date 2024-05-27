@@ -163,6 +163,25 @@ export type ResponseLPIPointsInfo = {
     volume: number;
 };
 
+export type RequestBOBIPointsInfo = {
+    account: string;
+};
+
+export enum BOBIPointsInfoEnum {
+    TVL = 1,
+    GAS = 2,
+}
+
+export type ResponseBOBIPointsInfo = {
+    total_tvl_spice: number;
+    total_gas_spice: number;
+    history: {
+        type: BOBIPointsInfoEnum;
+        spice: number;
+        time: number;
+    }[];
+};
+
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.points, { params });
 };
@@ -173,4 +192,8 @@ export const getLPIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseLPIPoin
 
 export const getSkaleAirdrop: RequestNormal<string, ResponseIPointsInfo> = async (address) => {
     return axios.get(ENDPOINTS.game.skale + address);
+};
+
+export const getBOBIPointsInfo: RequestNormal<RequestBOBIPointsInfo, ResponseBOBIPointsInfo> = async (params) => {
+    return axios.get(ENDPOINTS.iPoints.bob_points, { params });
 };
