@@ -58,6 +58,7 @@ export enum ChainId {
     TaikoHeklaL2Test = 167009,
     MorphTest = 2710,
     BeraTest = 80085,
+    BeraArtio = 80084,
     ZklinkTest = 810182,
 }
 
