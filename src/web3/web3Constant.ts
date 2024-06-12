@@ -38,6 +38,7 @@ export enum ChainId {
     Bob = 60808,
     Cyber = 7560,
     Taiko = 167000,
+    Kava = 2222,
 
     MantleTest = 5001,
     ScrollTestL2 = 534353,
