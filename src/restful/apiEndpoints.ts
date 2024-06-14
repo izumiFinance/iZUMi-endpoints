@@ -86,6 +86,7 @@ export const ENDPOINTS = {
         points: `${gameParentEndpoint}/ipoints/info/`,
         lp_points: `${gameParentEndpoint}/ipoints/lp_ipoints/`,
         bob_points: `${subParentEndpoint}/bob_distribution/spice/`,
+        swap_points: `${subParentEndpoint}/aggregate/trade_to_earn/`,
     },
     cross: {
         order_record: `${subParentEndpoint}/cross_chain/cross_chain_record/`,

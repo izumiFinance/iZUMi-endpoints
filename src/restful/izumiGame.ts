@@ -182,6 +182,18 @@ export type ResponseBOBIPointsInfo = {
     }[];
 };
 
+export type RequestSwapIPointsInfo = {
+    chainId: number;
+    account?: string;
+};
+
+export type ResponseSwapIPointsInfo = {
+    currentEpochVolume: number;
+    currentEpochTimeStamp: number;
+    lastEpochVolume: number;
+    txnNum: number;
+};
+
 export const getIPointsInfo: RequestNormal<RequestIPointsInfo, ResponseIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.points, { params });
 };
@@ -196,4 +208,8 @@ export const getSkaleAirdrop: RequestNormal<string, ResponseIPointsInfo> = async
 
 export const getBOBIPointsInfo: RequestNormal<RequestBOBIPointsInfo, ResponseBOBIPointsInfo> = async (params) => {
     return axios.get(ENDPOINTS.iPoints.bob_points, { params });
+};
+
+export const getSwapIPointsInfo: RequestNormal<RequestSwapIPointsInfo, ResponseSwapIPointsInfo> = async (params) => {
+    return axios.get(ENDPOINTS.iPoints.swap_points, { params });
 };
