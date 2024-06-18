@@ -17,7 +17,6 @@ export enum ChainId {
     Harmony = 1666600000,
     HarmonyTestnet = 1666700000,
     Cronos = 25,
-    ZkSyncAlphaTest = 280,
     ZkSyncEra = 324,
     Ontology = 58,
     Ultron = 1231,
@@ -39,7 +38,9 @@ export enum ChainId {
     Cyber = 7560,
     Taiko = 167000,
     Kava = 2222,
-
+    
+    KakarotTest = 1802203764,
+    ZkSyncAlphaTest = 280,
     MantleTest = 5001,
     ScrollTestL2 = 534353,
     ScrollSepoliaTest = 534351,
