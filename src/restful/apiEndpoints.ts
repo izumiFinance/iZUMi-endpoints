@@ -91,4 +91,7 @@ export const ENDPOINTS = {
     cross: {
         order_record: `${subParentEndpoint}/cross_chain/cross_chain_record/`,
     },
+    airdrop: {
+        merkle: `${subParentEndpoint}/sub_task/merkle/`,
+    },
 };
