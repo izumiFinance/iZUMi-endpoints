@@ -94,4 +94,7 @@ export const ENDPOINTS = {
     airdrop: {
         merkle: `${subParentEndpoint}/sub_task/merkle/`,
     },
+    dataStatus: {
+        status: `${parentEndpoint}/metrics/swap/`,
+    },
 };
