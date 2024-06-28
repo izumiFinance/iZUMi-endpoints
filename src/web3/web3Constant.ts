@@ -39,6 +39,7 @@ export enum ChainId {
     Taiko = 167000,
     Kava = 2222,
     Core = 1116,
+    Gravity = 1625,
     
     KakarotTest = 1802203764,
     ZkSyncAlphaTest = 280,
