@@ -65,6 +65,7 @@ export enum ChainId {
     BeraTest = 80085,
     BeraArtio = 80084,
     ZklinkTest = 810182,
+    DuckchainTestnet = 202105,
 }
 
 export enum TokenSymbol {
