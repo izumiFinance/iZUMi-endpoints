@@ -41,7 +41,8 @@ export enum ChainId {
     Core = 1116,
     Gravity = 1625,
     IoTeX = 4689,
-    
+    Morph = 2818,
+
     KakarotTest = 1802203764,
     ZkSyncAlphaTest = 280,
     MantleTest = 5001,
