@@ -42,7 +42,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xd1B4D87f69e0B7bd86A6f9525E25C9ccBaD008Ee',
     [ChainId.MantleTest]: '0xaDd9336AB4a795a66E4E1820f5d347c4294dd76a',
     [ChainId.ScrollTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
-    [ChainId.KakarotTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.KakarotTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.BedrockRolluxTestL2]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.ScrollSepoliaTest]: '0x67A1f4A939b477A6b7c5BF94D97E45dE87E608eF',
     [ChainId.LineaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
@@ -61,6 +61,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.BeraArtio]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ZklinkTest]: '0x25727b360604E1e6B440c3B25aF368F54fc580B6',
     [ChainId.DuckchainTestnet]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
+    [ChainId.MemeCoreTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -104,7 +105,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0x5478321c39E983CCc04743F2fD17D348876b55c8',
     [ChainId.MantleTest]: '0xfc88C03eea05aCd91e394d418B73978D6AF10E94',
     [ChainId.ScrollTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
-    [ChainId.KakarotTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
+    [ChainId.KakarotTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.BedrockRolluxTestL2]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
     [ChainId.ScrollSepoliaTest]: '0xC6C7c2edF70A3245ad6051E93809162B9758ce08',
     [ChainId.LineaTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
@@ -123,6 +124,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.BeraArtio]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.ZklinkTest]: '0x430972C4AF4703F7ce7B95C03735ae1504dD0Dd6',
     [ChainId.DuckchainTestnet]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
+    [ChainId.MemeCoreTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -166,7 +168,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xdFA454b8BdA6B0b315852d178F00DE83D7739b2e',
     [ChainId.MantleTest]: '0x3A507CB35fcDe6445EF6e3D44D836f81d24374B8',
     [ChainId.ScrollTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
-    [ChainId.KakarotTest]: '0x551197e6350936976DfFB66B2c3bb15DDB723250',
+    [ChainId.KakarotTest]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
     [ChainId.BedrockRolluxTestL2]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.ScrollSepoliaTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.LineaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
@@ -185,6 +187,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.BeraArtio]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ZklinkTest]: '0xE93D1d35a63f7C6b51ef46a27434375761a7Db28',
     [ChainId.DuckchainTestnet]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.MemeCoreTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -228,7 +231,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0x33d1BA78bA27aBF3244aE60930cC33E92F2C8413',
     [ChainId.MantleTest]: '0xa847ffbeB5fD9F302ec6f5C38Cfd18E3b58c020f',
     [ChainId.ScrollTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
-    [ChainId.KakarotTest]: '0x876508837C162aCedcc5dd7721015E83cbb4e339',
+    [ChainId.KakarotTest]: '0x551197e6350936976DfFB66B2c3bb15DDB723250',
     [ChainId.BedrockRolluxTestL2]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.ScrollSepoliaTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.LineaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
@@ -247,6 +250,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.BeraArtio]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.ZklinkTest]: '0xA8101060508f3A7fB9a98425a7fb765DB14ae224',
     [ChainId.DuckchainTestnet]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
+    [ChainId.MemeCoreTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -289,7 +293,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.ZkSyncAlphaTest]: '0xCcf32Ff9319BF332e48F4b49957307b953A06da9',
     [ChainId.MantleTest]: '0xffCE438BB30D468f78F12BB9d9e237B7D3Eb8bd8',
     [ChainId.ScrollTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
-    [ChainId.KakarotTest]: '0x6AECfe44225A50895e9EC7ca46377B9397D1Bb5b',
+    [ChainId.KakarotTest]: '0x876508837C162aCedcc5dd7721015E83cbb4e339',
     [ChainId.BedrockRolluxTestL2]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.ScrollSepoliaTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
     [ChainId.LineaTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
@@ -308,6 +312,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.BeraArtio]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
     [ChainId.ZklinkTest]: '0x51082D700FB9cD0E4AC9F7D98AE5Ec2e9B97879C',
     [ChainId.DuckchainTestnet]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
+    [ChainId.MemeCoreTest]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {

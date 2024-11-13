@@ -43,7 +43,7 @@ export enum ChainId {
     IoTeX = 4689,
     Morph = 2818,
 
-    KakarotTest = 1802203764,
+    KakarotTest = 920637907288165,
     ZkSyncAlphaTest = 280,
     MantleTest = 5001,
     ScrollTestL2 = 534353,
@@ -67,6 +67,7 @@ export enum ChainId {
     BeraArtio = 80084,
     ZklinkTest = 810182,
     DuckchainTestnet = 202105,
+    MemeCoreTest = 43521,
 }
 
 export enum TokenSymbol {
