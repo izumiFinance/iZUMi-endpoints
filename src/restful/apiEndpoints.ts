@@ -97,4 +97,8 @@ export const ENDPOINTS = {
     dataStatus: {
         status: `${parentEndpoint}/metrics/swap/`,
     },
+    pump: {
+        create: `${subParentEndpoint}/extra/upload_pump_token/`,
+        // create: `https://58b5-199-15-77-150.ngrok-free.app/api/v1/extra/upload_pump_token/`,
+    },
 };
