@@ -5,7 +5,7 @@ import { RequestNormal } from './apiUtils';
 export const maxNameLength = 128;
 export const maxSymbolLength = 64;
 export const maxDescriptionLength = 512;
-export const maxImageSize = 2 * 1024 * 1024;
+export const maxImageSize = 10 * 1024 * 1024;
 
 export type RequestCreateCoin = {
     name: string; //max 128
