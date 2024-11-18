@@ -27,3 +27,22 @@ export const postCreateCoin: RequestNormal<FormData, ResponseCreateCoin> = async
         },
     });
 };
+
+export type RequestCoinList = {
+    chainId: number;
+};
+
+export type ResponseCoinList = {
+    chainId: string;
+    contractAddress: string;
+    description: string;
+    image: string;
+    name: string;
+    sender: string;
+    symbol: string;
+    decimal: string;
+};
+
+export const getCoinList: RequestNormal<RequestCoinList, ResponseCoinList[]> = async (params) => {
+    return axios.get(ENDPOINTS.pump.get, { params });
+};

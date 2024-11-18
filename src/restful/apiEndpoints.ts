@@ -100,5 +100,6 @@ export const ENDPOINTS = {
     pump: {
         // create: `${subParentEndpoint}/extra/upload_pump_token/`,
         create: `https://9204-199-15-77-150.ngrok-free.app/api/v1/extra/upload_pump_token/`,
+        get: `https://9204-199-15-77-150.ngrok-free.app/api/v1/extra/get_pump_token_list/`,
     },
 };
