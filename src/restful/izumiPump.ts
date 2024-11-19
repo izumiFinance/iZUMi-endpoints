@@ -29,12 +29,16 @@ export const postCreateCoin: RequestNormal<FormData, ResponseCreateCoin> = async
 };
 
 export type RequestCoinList = {
-    chainId: number;
+    chain_id?: number;
+    sender?: string;
+    page?: number; // start from 1
+    page_size?: number;
+    contract_address?: string;
 };
 
 export type ResponseCoinList = {
-    chainId: string;
-    contractAddress: string;
+    chain_id: string;
+    contract_address: string;
     description: string;
     image: string;
     name: string;
