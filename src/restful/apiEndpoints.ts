@@ -20,7 +20,7 @@ const game_api_host_config: Record<string, string> = {
 };
 
 const sub_api_host_config: Record<string, string> = {
-    development: 'subapi.izumi.finance',
+    development: '9bbc-199-15-77-150.ngrok-free.app',
     production: 'subapi.izumi.finance',
     local: 'localhost:8000',
 };
@@ -98,9 +98,7 @@ export const ENDPOINTS = {
         status: `${parentEndpoint}/metrics/swap/`,
     },
     pump: {
-        // create: `${subParentEndpoint}/extra/upload_pump_token/`,
-        // get: `${subParentEndpoint}/extra/get_pump_token_list/`,
-        create: `https://6211-199-15-77-150.ngrok-free.app/api/v1/extra/upload_pump_token/`,
-        get: `https://6211-199-15-77-150.ngrok-free.app/api/v1/extra/get_pump_token_list/`,
+        create: `${subParentEndpoint}/extra/upload_pump_token/`,
+        get: `${subParentEndpoint}/extra/get_pump_token_list/`,
     },
 };
