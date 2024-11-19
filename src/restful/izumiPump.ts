@@ -46,3 +46,8 @@ export type ResponseCoinList = {
 export const getCoinList: RequestNormal<RequestCoinList, ResponseCoinList[]> = async (params) => {
     return axios.get(ENDPOINTS.pump.get, { params });
 };
+
+export const checkCoinStatus: RequestNormal<null, number> = async (params) => {
+    //The return value indicates how many seconds it will take to send.
+    return axios.get(ENDPOINTS.pump.check, { params });
+};

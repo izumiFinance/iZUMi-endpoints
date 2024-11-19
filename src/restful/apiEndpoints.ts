@@ -100,5 +100,6 @@ export const ENDPOINTS = {
     pump: {
         create: `${subParentEndpoint}/extra/upload_pump_token/`,
         get: `${subParentEndpoint}/extra/get_pump_token_list/`,
+        check: `${subParentEndpoint}/extra/check_pump_token_api_status/`,
     },
 };
