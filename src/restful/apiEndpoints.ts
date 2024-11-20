@@ -20,7 +20,7 @@ const game_api_host_config: Record<string, string> = {
 };
 
 const sub_api_host_config: Record<string, string> = {
-    development: '9bbc-199-15-77-150.ngrok-free.app',
+    development: 'alpha-subapi.izumi.finance',
     production: 'subapi.izumi.finance',
     local: 'localhost:8000',
 };
