@@ -3,6 +3,7 @@ interface APIConfig {
     root: string;
     game_root: string;
     subapi: string;
+    screener: string;
     prefix: string;
     version: string;
 }
@@ -25,6 +26,12 @@ const sub_api_host_config: Record<string, string> = {
     local: 'localhost:8000',
 };
 
+const screener_api_host_config: Record<string, string> = {
+    development: 'screener-api.izumi.finance',
+    production: 'screener-api.izumi.finance',
+    local: 'localhost:8000',
+};
+
 const env = process.env?.REACT_APP_ENDPOINT ?? process.env.REACT_APP_ENV;
 
 const config: APIConfig = {
@@ -32,6 +39,7 @@ const config: APIConfig = {
     root: api_host_config[env as string],
     game_root: game_api_host_config[env as string],
     subapi: sub_api_host_config[env as string],
+    screener: screener_api_host_config[env as string],
     prefix: 'api',
     version: 'v1',
 };
@@ -40,6 +48,7 @@ const productionEndpoint = `https://${api_host_config['production']}/${config.pr
 export const parentEndpoint = `${config.protocol}${config.root}/${config.prefix}/${config.version}`;
 export const gameParentEndpoint = `${config.protocol}${config.game_root}/${config.prefix}/${config.version}`;
 export const subParentEndpoint = `${config.protocol}${config.subapi}/${config.prefix}/${config.version}`;
+export const screenerParentEndpoint = `${config.protocol}${config.screener}/${config.prefix}/${config.version}`;
 
 export const ENDPOINTS = {
     farm: {
@@ -101,5 +110,9 @@ export const ENDPOINTS = {
         create: `${subParentEndpoint}/extra/upload_pump_token/`,
         get: `${subParentEndpoint}/extra/get_pump_token_list/`,
         check: `${subParentEndpoint}/extra/check_pump_token_api_status/`,
+    },
+    pool: {
+        poolInfo: `${screenerParentEndpoint}/izumi_swap/meta_record/`,
+        klines: `${screenerParentEndpoint}/izumi_swap/klines/`,
     },
 };
