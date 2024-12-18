@@ -9,6 +9,7 @@ export type RequestCoinList = {
     chain_id?: number;
     type: PoolsInfoTypeEnum;
     contract_addr?: string;
+    order_by?: string;
     page?: number; // start from 1
     page_size?: number;
 };
@@ -38,13 +39,15 @@ export type ResponsePoolsInfo = {
     version: string;
     tokenX_price: number;
     tokenY_price: number;
-    HOUR_8: number;
-    DAY: number;
-    MINUTE_5: number;
-    MINUTE_15: number;
-    HOUR_4: number;
-    HOUR_1: number;
-    volumeHour: number;
+    HOUR_8?: number;
+    DAY?: number;
+    MINUTE_5?: number;
+    MINUTE_15?: number;
+    HOUR_4?: number;
+    HOUR_1?: number;
+    volume_1H?: number;
+    txnNum_24H?: number;
+    volume_24H?: number;
 };
 
 export const getPoolsInfo: RequestNormal<RequestCoinList, ResponsePoolsInfo[]> = async (params) => {
