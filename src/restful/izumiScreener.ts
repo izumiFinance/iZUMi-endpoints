@@ -113,3 +113,27 @@ export type ResponsePoolChartData = {
 export const getPoolChartData: RequestNormal<RequestPoolChartData, ResponsePoolChartData[]> = async (params) => {
     return axios.get(ENDPOINTS.pool.klines, { params });
 };
+
+export type RequestPoolAprByMerkl = {
+    chainId: number;
+    mainProtocolId?: string;
+};
+
+export type ResponsePoolAprByMerkl = {
+    chainId: number;
+    identifier: string;
+    apr: number;
+};
+
+export const getPoolAprByMerkl = async (params: RequestPoolAprByMerkl): Promise<ResponsePoolAprByMerkl[]> => {
+    const { chainId, mainProtocolId = 'izumi' } = params;
+
+    const response = await axios.get<ResponsePoolAprByMerkl[]>('https://api.merkl.xyz/v4/opportunities/', {
+        params: {
+            chainId,
+            mainProtocolId,
+        },
+    });
+
+    return response.data;
+};
