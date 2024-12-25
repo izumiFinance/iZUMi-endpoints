@@ -128,6 +128,9 @@ export type ResponseIziTransRecord = {
     price?: number;
     amount?: number;
     dealPrice?: number;
+
+    priceX?: number;
+    priceY?: number;
 };
 
 export type ResponseIziSwapTransAggregateRecord = {
