@@ -114,5 +114,6 @@ export const ENDPOINTS = {
     pool: {
         poolInfo: `${screenerParentEndpoint}/izumi_swap/meta_record/`,
         klines: `${screenerParentEndpoint}/izumi_swap/klines/`,
+        trans_record: `${screenerParentEndpoint}/izumi_swap/trans_record/`,
     },
 };

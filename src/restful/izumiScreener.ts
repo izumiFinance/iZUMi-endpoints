@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { ENDPOINTS } from './apiEndpoints';
 import { RequestNormal } from './apiUtils';
+import { RequestIziSwapTransRecord, ResponseIziTransRecord } from './izumiSwapBase';
 
 export enum PoolsInfoTypeEnum {
     IZI_SWAP_POOL = 10,
@@ -112,6 +113,16 @@ export type ResponsePoolChartData = {
 
 export const getPoolChartData: RequestNormal<RequestPoolChartData, ResponsePoolChartData[]> = async (params) => {
     return axios.get(ENDPOINTS.pool.klines, { params });
+};
+
+export const getIziSwapTransRecordInPools: RequestNormal<RequestIziSwapTransRecord, ResponseIziTransRecord[]> = async (params) => {
+    if ((params.chain_id ?? 0) <= 0) {
+        params.chain_id = undefined;
+    } else if (params.type === undefined && params.contract_addr && params.chain_id) {
+        // avoid db index choose record_time as files sort
+        params.order_by = 'id';
+    }
+    return axios.get(ENDPOINTS.pool.trans_record, { params });
 };
 
 export type RequestPoolAprByMerkl = {
