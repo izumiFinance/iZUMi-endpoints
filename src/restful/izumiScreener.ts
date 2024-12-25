@@ -26,6 +26,7 @@ export type ResponsePoolsInfo = {
     liquidity: number;
     timestamp: number;
     latestPrice: number;
+    latestDealTime: number;
     initialPrice: number;
     tokenX_address: string;
     tokenY_address: string;
@@ -48,8 +49,29 @@ export type ResponsePoolsInfo = {
     volume_1H?: number;
     txnNum_24H?: number;
     volume_24H?: number;
+    tokenX_price_change_rate?: {
+        DAY?: number;
+        HOUR_1?: number;
+        HOUR_4?: number;
+        HOUR_8?: number;
+        MINUTE_1?: number;
+        MINUTE_5?: number;
+        MINUTE_15?: number;
+        MONTH?: 0;
+        WEEK?: number;
+    };
+    tokenY_price_change_rate?: {
+        DAY?: number;
+        HOUR_1?: number;
+        HOUR_4?: number;
+        HOUR_8?: number;
+        MINUTE_1?: number;
+        MINUTE_5?: number;
+        MINUTE_15?: number;
+        MONTH?: 0;
+        WEEK?: number;
+    };
 };
-
 export const getPoolsInfo: RequestNormal<RequestCoinList, ResponsePoolsInfo[]> = async (params) => {
     return axios.get(ENDPOINTS.pool.poolInfo, { params });
 };
