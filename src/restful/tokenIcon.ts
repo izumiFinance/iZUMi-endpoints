@@ -6,7 +6,7 @@ export type BtcFunInfo = {
     pool: string;
     name: string;
     symbol: string;
-    decimals: string;
+    decimals: number;
     image: string;
 };
 
