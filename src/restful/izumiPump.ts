@@ -34,6 +34,7 @@ export type RequestCoinList = {
     page?: number; // start from 1
     page_size?: number;
     contract_address?: string;
+    addr_list?: string;
 };
 
 export type ResponseCoinList = {
