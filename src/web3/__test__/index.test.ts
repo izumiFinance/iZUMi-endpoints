@@ -7,7 +7,7 @@ const BSC_WEB3 = new Web3(new Web3.providers.HttpProvider(BSC_RPC_URL));
 
 test('PoolContractTest', async () => {
     const poolContract = getPoolContractByAddress(BSC_WEB3, BSC_IZI_SWAP_USDT_WBNB_POOl_ADDR);
-    const poolState = await poolContract?.methods.state().call();
+    const poolState = await poolContract?.methods.state().call() as any;
     console.log(poolState);
     expect(poolState?.locked !== undefined).toBeTruthy();
 });
