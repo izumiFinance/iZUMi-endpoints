@@ -43,6 +43,7 @@ export enum ChainId {
     IoTeX = 4689,
     Morph = 2818,
     Plume = 98865,
+    HashKey = 177,
 
     KakarotTest = 920637907288165,
     ZkSyncAlphaTest = 280,
@@ -69,6 +70,7 @@ export enum ChainId {
     ZklinkTest = 810182,
     DuckchainTestnet = 202105,
     MemeCoreTest = 43521,
+    MonadTest = 10143,
 }
 
 export enum TokenSymbol {
