@@ -32,7 +32,7 @@ const screener_api_host_config: Record<string, string> = {
     local: 'localhost:8000',
 };
 
-const env = process.env?.REACT_APP_ENDPOINT ?? process.env.REACT_APP_ENV;
+const env = import.meta.env?.VITE_ENDPOINT ?? import.meta.env.VITE_ENV;
 
 const config: APIConfig = {
     protocol: env === 'local' ? 'http://' : 'https://',

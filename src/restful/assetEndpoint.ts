@@ -8,4 +8,4 @@ const devTokenListUrl = [
     'https://tokenlist.izumi.finance/tokenListDev.json',
 ];
 
-export const tokenListUrl = process.env.REACT_APP_ENV === 'production' ? prodTokenListUrl : devTokenListUrl;
+export const tokenListUrl = import.meta.env.VITE_ENV === 'production' ? prodTokenListUrl : devTokenListUrl;

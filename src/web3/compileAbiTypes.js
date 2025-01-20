@@ -14,7 +14,7 @@ async function listFiles(dir) {
     return Array.prototype.concat(...files);
 }
 
-const generatorPath = path.join(process.cwd(), 'node_modules/.bin/abi-types-generator');
+const generatorPath = path.join(import.meta.env.BASE_URL, 'node_modules/.bin/abi-types-generator');
 const abiPath = path.join(__dirname, 'abi');
 const outputPath = path.join(__dirname, 'types');
 
