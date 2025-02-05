@@ -65,6 +65,7 @@ export const LIQUIDITY_MANAGER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.DuckchainTestnet]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.MemeCoreTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
     [ChainId.MonadTest]: '0x1eE5eDC5Fe498a2dD82862746D674DB2a5e7fef6',
+    [ChainId.TacTurinTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
 };
 
 export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
@@ -131,6 +132,7 @@ export const LIMIT_ORDER_MANAGER_ADDRESSES: TokenId2ContractAddress = {
     [ChainId.DuckchainTestnet]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.MemeCoreTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
     [ChainId.MonadTest]: '0x77132b63429718Db2B6ad8D942eE13A198f6Ab49',
+    [ChainId.TacTurinTest]: '0xa9754f0D9055d14EB0D2d196E4C51d8B2Ee6f4d3',
 };
 
 export const SWAP_ADDRESS: TokenId2ContractAddress = {
@@ -197,6 +199,7 @@ export const SWAP_ADDRESS: TokenId2ContractAddress = {
     [ChainId.DuckchainTestnet]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.MemeCoreTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
     [ChainId.MonadTest]: '0xF6FFe4f3FdC8BBb7F70FFD48e61f17D1e343dDfD',
+    [ChainId.TacTurinTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
 };
 
 export const QUOTER_ADDRESS: TokenId2ContractAddress = {
@@ -263,6 +266,7 @@ export const QUOTER_ADDRESS: TokenId2ContractAddress = {
     [ChainId.DuckchainTestnet]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
     [ChainId.MemeCoreTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
     [ChainId.MonadTest]: '0x95c5F14106ab4d1dc0cFC9326225287c18c2d247',
+    [ChainId.TacTurinTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
 };
 
 export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
@@ -328,6 +332,7 @@ export const QUOTER_ADDRESS_LIMIT: TokenId2ContractAddress = {
     [ChainId.DuckchainTestnet]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
     [ChainId.MemeCoreTest]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
     [ChainId.MonadTest]: '0x4d140E612e476A6ba54EF1306b2bA398a5dEff09',
+    [ChainId.TacTurinTest]: '0xEB122DE19FeA9eD039E2d087113db26017f5F91a',
 };
 
 export const BOX_ADDRESS: TokenId2ContractAddress = {

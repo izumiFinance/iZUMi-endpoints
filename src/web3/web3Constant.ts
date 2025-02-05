@@ -71,6 +71,7 @@ export enum ChainId {
     DuckchainTestnet = 202105,
     MemeCoreTest = 43521,
     MonadTest = 10143,
+    TacTurinTest = 2390,
 }
 
 export enum TokenSymbol {
