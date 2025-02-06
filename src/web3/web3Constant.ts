@@ -44,6 +44,7 @@ export enum ChainId {
     Morph = 2818,
     Plume = 98865,
     HashKey = 177,
+    Hemi = 43111,
 
     KakarotTest = 920637907288165,
     ZkSyncAlphaTest = 280,
