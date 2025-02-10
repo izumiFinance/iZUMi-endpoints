@@ -45,6 +45,7 @@ export enum ChainId {
     Plume = 98865,
     HashKey = 177,
     Hemi = 43111,
+    OverProtocol = 54176,
 
     KakarotTest = 920637907288165,
     ZkSyncAlphaTest = 280,
