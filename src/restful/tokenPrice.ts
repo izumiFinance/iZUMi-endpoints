@@ -9,7 +9,8 @@ export type RequestTokenPrice = {
     chain_id: number;
 
     // choose one
-    address?: string;
+    address?: string; //old interface
+    token_addr?: string;
     symbol?: string;
 };
 
@@ -21,6 +22,11 @@ export type RequestTokenSymbolListPrice = {
 export type RequestTokenSymbolPrice = {
     chain_id: number;
     symbol: string[];
+};
+
+export type RequestTokenAddressListPrice = {
+    chain_id: number;
+    addressList: string[];
 };
 
 /**
@@ -62,7 +68,11 @@ export const getChainTokenPriceBySymbolList: RequestNormal<RequestTokenSymbolLis
  * 根据链上地址或者已存在的 symbol 获取注册过的 Token 价格数据。
  * 如使用 address 第一次访问，会注册 Token 的基本数据，用于后续可以访问到价格。
  */
-export const getTokenPrice: RequestNormal<RequestTokenPrice, ResponseTokenListPrice> = async (params) => {
+export const getOldTokenPrice: RequestNormal<RequestTokenPrice, ResponseTokenListPrice> = async (params) => {
+    return axios.get(ENDPOINTS.priceInfo.price, { params });
+};
+
+export const getTokenPrice: RequestNormal<RequestTokenPrice, number> = async (params) => {
     return axios.get(ENDPOINTS.priceInfo.price, { params });
 };
 
@@ -70,6 +80,17 @@ export const memGetTokenPrice = mem(getTokenPrice, {
     maxAge: 5 * 60 * 1000,
     cacheKey: (arguments_) => `tokenPrice-${JSON.stringify(arguments_)}`,
 });
+
+/**
+ * 根据 addressList 批量获取注册过的 Token 价格数据
+ * 需指定 chain
+ */
+export const getChainTokenPriceByAddressList: RequestNormal<RequestTokenAddressListPrice, ResponseTokenListPrice> = (params) => {
+    const listParams = new URLSearchParams();
+    params.addressList.forEach((s) => listParams.append('t', s));
+    listParams.append('chain_id', params.chain_id.toString());
+    return axios.get(ENDPOINTS.priceInfo.price, { params: listParams });
+};
 
 export const memGetTokenPriceBySymbol = mem(getTokenPriceBySymbol, {
     maxAge: 5 * 60 * 1000,

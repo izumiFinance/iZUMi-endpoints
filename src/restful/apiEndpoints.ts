@@ -71,7 +71,8 @@ export const ENDPOINTS = {
     },
     priceInfo: {
         price_info: `${productionEndpoint}/token_info/price_info/`,
-        price: `${parentEndpoint}/token_info/price/`,
+        old_price: `${parentEndpoint}/token_info/price/`,
+        price: `${screenerParentEndpoint}/izumi_swap/price_info/`,
     },
     game: {
         events: `${gameParentEndpoint}/game/events/`,
