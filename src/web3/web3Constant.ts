@@ -43,6 +43,7 @@ export enum ChainId {
     IoTeX = 4689,
     Morph = 2818,
     Plume = 98865,
+    PlumeNew = 98866,
     HashKey = 177,
     Hemi = 43111,
     OverProtocol = 54176,
